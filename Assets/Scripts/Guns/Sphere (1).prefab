@@ -30,8 +30,8 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 5.4977303, y: 2.36, z: 8.436}
-  m_LocalScale: {x: 0.20451, y: 0.20451, z: 0.20451}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 0.06, y: 0.06, z: 0.06}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -63,7 +63,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 2ce86eaf582453f48aec875b39925ba1, type: 2}
+  - {fileID: 2100000, guid: a7741c022095b3e4f9e00c0f396b9868, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -158,9 +158,9 @@ TrailRenderer:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: 1
-        inSlope: 0
-        outSlope: 0
+        value: 0.21367227
+        inSlope: -0.0029885406
+        outSlope: -0.0029885406
         tangentMode: 0
         weightedMode: 0
         inWeight: 0.33333334
@@ -179,9 +179,9 @@ TrailRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 1, g: 0.44853216, b: 0, a: 1}
-      key1: {r: 1, g: 0.93155086, b: 0, a: 1}
-      key2: {r: 0, g: 0, b: 0, a: 0}
+      key0: {r: 0.6603774, g: 0.6603774, b: 0.6603774, a: 0.003921569}
+      key1: {r: 1, g: 1, b: 1, a: 0.003921569}
+      key2: {r: 0, g: 0, b: 0, a: 1}
       key3: {r: 0, g: 0, b: 0, a: 0}
       key4: {r: 0, g: 0, b: 0, a: 0}
       key5: {r: 0, g: 0, b: 0, a: 0}
@@ -197,7 +197,7 @@ TrailRenderer:
       ctime7: 0
       atime0: 0
       atime1: 65535
-      atime2: 0
+      atime2: 65535
       atime3: 0
       atime4: 0
       atime5: 0
