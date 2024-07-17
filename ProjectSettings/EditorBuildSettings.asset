@@ -9,6 +9,6 @@ EditorBuildSettings:
     path: Assets/OutdoorsScene.unity
     guid: 8124e5870f4fd4c779e7a5f994e84ad1
   - enabled: 1
-    path: Assets/DarkSoup/New Scene.unity
+    path: Assets/Scenes/DsTestScene/Rofls.unity
     guid: 1914386249d066149a0421ba8717b641
   m_configObjects: {}
