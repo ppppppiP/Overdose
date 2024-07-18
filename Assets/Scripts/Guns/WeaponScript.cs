@@ -26,7 +26,7 @@ public class WeaponScript : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetButton("Fire1") && Time.time >= nextFireTime && !isReloading)
+        if (Input.GetKey(KeyCode.Mouse0) && Time.time >= nextFireTime && !isReloading)
         {
             Fire();
         }
@@ -50,13 +50,13 @@ public class WeaponScript : MonoBehaviour
 
             if (Physics.Raycast(ray, out RaycastHit hit))
             {
-                // Здесь можно добавить логику нанесения урона цели
+                // логика ПОПАДАНЯИ ПО ВРАГАМ БУДЕТ ТУТА)))
                 StartCoroutine(TracerRenderer(TracerOutPosition.position, hit.point));
                 
                 Debug.Log("Hit: " + hit.transform.name + " for " + damage + " damage");
             }
 
-            // Вызов метода тряски оружия
+           
             recoil.Recoil();
         }
         else if (!isReloading)

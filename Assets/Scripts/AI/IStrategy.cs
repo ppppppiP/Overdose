@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Threading.Tasks;
 using UnityEngine;
 using UnityEngine.AI;
-
+using Zenject;
 
 public interface IStrategy
 {
@@ -63,12 +63,12 @@ public class PatrolStrategy : IStrategy
 
     public Node.Status Process()
     {
-        if (currentIndex == patrolPoints.Count) return Node.Status.Success;
+        //if (currentIndex == patrolPoints.Count) return Node.Status.Success;
 
         var target = patrolPoints[currentIndex];
         agent.SetDestination(target.position);
 
-        if (isPathCalculated && agent.remainingDistance < 0.1f)
+        if (isPathCalculated && agent.remainingDistance < 0.5f)
         {
             currentIndex++;
             isPathCalculated = false;
@@ -179,23 +179,56 @@ public class MoveToTarget : IStrategy
     readonly Transform entity;
     readonly NavMeshAgent agent;
     readonly Transform target;
-    bool isPathCalculated;
+    readonly float minDistance;
 
-    public MoveToTarget(Transform entity, NavMeshAgent agent, Transform target)
+    public MoveToTarget(Transform entity, NavMeshAgent agent, Transform target, float minDistance)
     {
         this.entity = entity;
         this.agent = agent;
         this.target = target;
+        this.minDistance = minDistance;
     }
 
     public Node.Status Process()
     {
-        if (Vector3.Distance(entity.position, target.position) < 2f)
+        if (Vector3.Distance(entity.position, target.position) <= minDistance)
         {
             return Node.Status.Success;
         }
 
         agent.SetDestination(target.position);
+        return Node.Status.Running;
+    }
+
+    public void Reset()
+    {
+        agent.ResetPath();
+    }
+}
+public class AttackStrategy : IStrategy
+{
+    readonly Transform entity;
+    readonly NavMeshAgent agent;
+    readonly Transform target;
+    readonly float AttackDistance;
+    bool isPathCalculated;
+    Tween tween;
+    public AttackStrategy(Transform entity, NavMeshAgent agent, Transform target, float attackDistance)
+    {
+        this.entity = entity;
+        this.agent = agent;
+        this.target = target;
+        AttackDistance = attackDistance;
+    }
+
+    public Node.Status Process()
+    {
+        if (Vector3.Distance(entity.position, target.position) > AttackDistance)
+        {Debug.LogAssertion("Asdfasdfasdfsadf");
+            return Node.Status.Success;
+        }
+        agent.Stop();
+        tween = agent.transform.DOLookAt(target.position, 0.3f, AxisConstraint.Y);
         
 
         if (agent.pathPending)
