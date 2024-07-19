@@ -12,6 +12,8 @@ public class WeaponScript : MonoBehaviour
     public float reloadTime = 2f;
     public int damage = 10;
 
+    public int DAMAGE;
+
     private float nextFireTime;
     private int currentAmmo;
     private bool isReloading;
@@ -52,6 +54,11 @@ public class WeaponScript : MonoBehaviour
             {
                 // ëîãèêà ÏÎÏÀÄÀÍßÈ ÏÎ ÂĞÀÃÀÌ ÁÓÄÅÒ ÒÓÒÀ)))
                 StartCoroutine(TracerRenderer(TracerOutPosition.position, hit.point));
+
+                if(hit.transform.TryGetComponent<IDamagable>(out IDamagable damage))
+                {
+                    damage.GetDamage(DAMAGE);
+                }
                 
                 Debug.Log("Hit: " + hit.transform.name + " for " + damage + " damage");
             }

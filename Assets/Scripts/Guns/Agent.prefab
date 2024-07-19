@@ -42,9 +42,10 @@ GameObject:
   - component: {fileID: 5526060327722506139}
   - component: {fileID: 4754933935728320052}
   - component: {fileID: 3684299751470581230}
+  - component: {fileID: 5336633224367637007}
   - component: {fileID: 691309290329327302}
   - component: {fileID: 6453817917449606230}
-  - component: {fileID: 1519829478767834335}
+  - component: {fileID: 4164550497001263751}
   m_Layer: 0
   m_Name: Agent
   m_TagString: Untagged
@@ -120,6 +121,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &5336633224367637007
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 674667639901803546}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cd6149d9bdbf484da9d143613129904, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HP: 100
 --- !u!195 &691309290329327302
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -167,8 +181,8 @@ MonoBehaviour:
   maxAmmo: 3
   reloadTime: 1
   Tracer: {fileID: 7393219611243675056, guid: cefff5f6e3c6352469858c81231daa87, type: 3}
---- !u!135 &1519829478767834335
-SphereCollider:
+--- !u!136 &4164550497001263751
+CapsuleCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -182,11 +196,13 @@ SphereCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 0
-  serializedVersion: 3
-  m_Radius: 10.37
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5
+  m_Height: 2
+  m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1218843520254777814
 GameObject:

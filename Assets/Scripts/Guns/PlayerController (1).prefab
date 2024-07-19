@@ -175,6 +175,7 @@ MonoBehaviour:
   spread: 0
   reloadTime: 2
   damage: 10
+  DAMAGE: 10
   Tracer: {fileID: 7393219611243675056, guid: cefff5f6e3c6352469858c81231daa87, type: 3}
   TracerOutPosition: {fileID: 8264650295056263904}
   recoil: {fileID: 8702941232145548591}
@@ -848,6 +849,7 @@ MonoBehaviour:
   spread: 0
   reloadTime: 2
   damage: 10
+  DAMAGE: 0
   Tracer: {fileID: 7393219611243675056, guid: cefff5f6e3c6352469858c81231daa87, type: 3}
   TracerOutPosition: {fileID: 4608686553527286887}
   recoil: {fileID: 8702941232145548591}
