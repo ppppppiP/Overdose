@@ -18,6 +18,7 @@ public class WeaponScript : MonoBehaviour
     private int currentAmmo;
     private bool isReloading;
 
+    [SerializeField] GameObject ShootingVFX;
     [SerializeField] GameObject Tracer;
     [SerializeField] Transform TracerOutPosition;
     [SerializeField] WeaponRecoil recoil;
@@ -54,6 +55,7 @@ public class WeaponScript : MonoBehaviour
             {
                 // логика ПОПАДАНЯИ ПО ВРАГАМ БУДЕТ ТУТА)))
                 StartCoroutine(TracerRenderer(TracerOutPosition.position, hit.point));
+                Instantiate(ShootingVFX, TracerOutPosition.position, TracerOutPosition.rotation);
 
                 if(hit.transform.TryGetComponent<IDamagable>(out IDamagable damage))
                 {
@@ -95,6 +97,7 @@ public class WeaponScript : MonoBehaviour
 
         // Опционально: уничтожаем трейсер после небольшой задержки
         yield return new WaitForSeconds(1f);
+
         Destroy(tracer);
     }
 

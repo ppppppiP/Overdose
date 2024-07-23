@@ -63,7 +63,7 @@ public class PatrolStrategy : IStrategy
 
     public Node.Status Process()
     {
-        //if (currentIndex == patrolPoints.Count) return Node.Status.Success;
+        if (currentIndex == patrolPoints.Count) return Node.Status.Success;
 
         var target = patrolPoints[currentIndex];
         agent.SetDestination(target.position);

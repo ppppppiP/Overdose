@@ -1,4 +1,5 @@
 using BlackBoardSystem;
+using Controller;
 using DG.Tweening;
 using System.Collections;
 using System.Collections.Generic;
@@ -20,10 +21,12 @@ public class E_Kaban : MonoBehaviour, IExpert
     Blackboard blackboard;
     BlackboardKey isPlayerDetectedKey;
     BlackboardKey isWithinAttackRangeKey;
-  
+
+    public LayerMask Layer;
+
     private int currentAmmo = 0;
     [SerializeField] int maxAmmo;
-    private float spread = 0.1f;
+    private float spread = 0.5f;
     private bool isReloading;
     [SerializeField] float reloadTime;
     [SerializeField] GameObject Tracer;
@@ -78,8 +81,20 @@ public class E_Kaban : MonoBehaviour, IExpert
 
        
         float distanceToPlayer = Vector3.Distance(transform.position, playerTarget.transform.position);
-        blackboard.SetValue(isPlayerDetectedKey, distanceToPlayer <= detectionDistance);
-        blackboard.SetValue(isWithinAttackRangeKey, distanceToPlayer <= minAttackDistance);
+
+        if (Physics.Linecast(playerTarget.transform.position, transform.position, Layer))
+            blackboard.SetValue(isPlayerDetectedKey, false);
+        else 
+            blackboard.SetValue(isPlayerDetectedKey, distanceToPlayer <= detectionDistance);
+           
+
+        if (Physics.Linecast(playerTarget.transform.position, transform.position, Layer))
+            blackboard.SetValue(isWithinAttackRangeKey, false);
+        else 
+            blackboard.SetValue(isWithinAttackRangeKey, distanceToPlayer <= minAttackDistance);
+            
+
+
     }
 
     public int GetInstance(Blackboard blackboard)
@@ -107,6 +122,11 @@ public class E_Kaban : MonoBehaviour, IExpert
                 if (Physics.Raycast(gunPosition.position, direction, out RaycastHit hit))
                 {
                     UnityEngine.Debug.LogAssertion("SHOOOOOOOOOOOOOOOOOOOOOOT");
+                if (hit.transform.TryGetComponent<PlayerController>(out PlayerController damage))
+                {
+                    CameraShake.Instance.ShakeCamera();
+                }
+               ;
                     // логика попадания по врагам будет тут
                     StartCoroutine(TracerRenderer(gunPosition.position, hit.point));
                 }
