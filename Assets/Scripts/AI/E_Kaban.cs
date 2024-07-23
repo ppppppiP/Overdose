@@ -1,10 +1,12 @@
 using BlackBoardSystem;
 using Controller;
 using DG.Tweening;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Threading.Tasks;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.AI;
 using UnityServiceLocator;
@@ -30,6 +32,7 @@ public class E_Kaban : MonoBehaviour, IExpert
     private bool isReloading;
     [SerializeField] float reloadTime;
     [SerializeField] GameObject Tracer;
+    [SerializeField] GameObject SpawnVFX;
 
     bool reloadFlag = true;
 
@@ -114,13 +117,14 @@ public class E_Kaban : MonoBehaviour, IExpert
             {
                 currentAmmo++;
                
-                Vector3 spreadVector = Random.insideUnitSphere * spread;
+                Vector3 spreadVector = UnityEngine.Random.insideUnitSphere * spread;
              
 
                 // Исправлено направление для Raycast
                 Vector3 direction = (playerTarget.transform.position - gunPosition.position).normalized + spreadVector;
                 if (Physics.Raycast(gunPosition.position, direction, out RaycastHit hit))
                 {
+                Instantiate(SpawnVFX, gunPosition.transform.position, gunPosition.transform.rotation);
                     UnityEngine.Debug.LogAssertion("SHOOOOOOOOOOOOOOOOOOOOOOT");
                 if (hit.transform.TryGetComponent<PlayerController>(out PlayerController damage))
                 {
@@ -168,7 +172,7 @@ public class E_Kaban : MonoBehaviour, IExpert
         isReloading = true;
         
 
-        await Task.Delay((int)reloadTime* 1000);
+        await Task.Delay(((int)(reloadTime* 1000)));
         reloadFlag = true;
         currentAmmo = 0;
         isReloading = false;
