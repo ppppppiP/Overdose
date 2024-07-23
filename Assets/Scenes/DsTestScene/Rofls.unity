@@ -21826,7 +21826,7 @@ GameObject:
   - component: {fileID: 1829429750}
   - component: {fileID: 1829429749}
   - component: {fileID: 1829429748}
-  m_Layer: 2
+  m_Layer: 4
   m_Name: Cube (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28077,7 +28077,7 @@ MonoBehaviour:
   gunPosition: {fileID: 3279437201144719560}
   Layer:
     serializedVersion: 2
-    m_Bits: 4
+    m_Bits: 16
   maxAmmo: 1
   reloadTime: 0.2
   Tracer: {fileID: 7393219611243675056, guid: cefff5f6e3c6352469858c81231daa87, type: 3}
