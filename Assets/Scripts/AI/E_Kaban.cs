@@ -28,8 +28,9 @@ public class E_Kaban : MonoBehaviour, IExpert
 
     private int currentAmmo = 0;
     [SerializeField] int maxAmmo;
-    private float spread = 0.5f;
+    public float spread = 0.5f;
     private bool isReloading;
+    public float Damage;
     [SerializeField] float reloadTime;
     [SerializeField] GameObject Tracer;
     [SerializeField] GameObject SpawnVFX;
@@ -126,8 +127,10 @@ public class E_Kaban : MonoBehaviour, IExpert
                 {
                 Instantiate(SpawnVFX, gunPosition.transform.position, gunPosition.transform.rotation);
                     UnityEngine.Debug.LogAssertion("SHOOOOOOOOOOOOOOOOOOOOOOT");
-                if (hit.transform.TryGetComponent<PlayerController>(out PlayerController damage))
+                
+                if (hit.transform.TryGetComponent<PlayerHP>(out PlayerHP damage))
                 {
+                    damage.GetDamage(Damage);
                     CameraShake.Instance.ShakeCamera();
                 }
                ;
