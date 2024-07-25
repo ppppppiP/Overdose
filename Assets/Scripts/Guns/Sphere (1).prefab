@@ -121,7 +121,7 @@ TrailRenderer:
   m_DynamicOccludee: 1
   m_StaticShadowCaster: 0
   m_MotionVectors: 0
-  m_LightProbeUsage: 0
+  m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 0
   m_RayTracingMode: 0
   m_RayTraceProcedural: 0
@@ -149,8 +149,8 @@ TrailRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Time: 0.2
-  m_PreviewTimeScale: 0
+  m_Time: 0.07
+  m_PreviewTimeScale: 1
   m_Parameters:
     serializedVersion: 3
     widthMultiplier: 0.1
@@ -180,7 +180,7 @@ TrailRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 0.6603774, g: 0.6603774, b: 0.6603774, a: 0.003921569}
+      key0: {r: 1, g: 0.8313772, b: 0.4292453, a: 0.20784314}
       key1: {r: 1, g: 1, b: 1, a: 0.003921569}
       key2: {r: 0, g: 0, b: 0, a: 1}
       key3: {r: 0, g: 0, b: 0, a: 0}
@@ -214,10 +214,10 @@ TrailRenderer:
     textureMode: 0
     textureScale: {x: 1, y: 1}
     shadowBias: 0.5
-    generateLightingData: 0
+    generateLightingData: 1
   m_MinVertexDistance: 0.1
   m_MaskInteraction: 0
-  m_Autodestruct: 0
+  m_Autodestruct: 1
   m_Emitting: 1
   m_ApplyActiveColorSpace: 1
 --- !u!1001 &4452367463498274713
