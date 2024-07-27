@@ -5768,6 +5768,9 @@ MonoBehaviour:
   Tracer: {fileID: 7393219611243675056, guid: cefff5f6e3c6352469858c81231daa87, type: 3}
   SpawnVFX: {fileID: 5056806435967801578, guid: ec0513df6f443b94d937862fb54e2cb0,
     type: 3}
+  arcRadius: 13.09
+  arcAngle: 15.2
+  patrolRadius: 72.72
 --- !u!195 &98540495
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -20887,8 +20890,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   anim: {fileID: 1317247186}
-  hands: {fileID: 5310321682688976254}
-  target: {fileID: 151405742}
+  hands: {fileID: 0}
+  target: {fileID: 0}
 --- !u!114 &1317247188
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20902,8 +20905,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   anim: {fileID: 7402838491103781782}
-  hands: {fileID: 5310321682688976254}
-  target: {fileID: 151405742}
+  hands: {fileID: 0}
+  target: {fileID: 0}
 --- !u!1 &1321063277
 GameObject:
   m_ObjectHideFlags: 0
@@ -29638,7 +29641,7 @@ GameObject:
   - component: {fileID: 1605335304}
   - component: {fileID: 1605335303}
   - component: {fileID: 1605335302}
-  m_Layer: 4
+  m_Layer: 0
   m_Name: Plane
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -35871,7 +35874,7 @@ MonoBehaviour:
   EnabledRotationMovement: 1
   RotationMultipler: 6
   ToggleSpeed: 1.5
-  x: 10
+  x: 0
 --- !u!4 &1790426902237417155
 Transform:
   m_ObjectHideFlags: 0
@@ -43126,6 +43129,9 @@ MonoBehaviour:
   Tracer: {fileID: 7393219611243675056, guid: cefff5f6e3c6352469858c81231daa87, type: 3}
   SpawnVFX: {fileID: 5056806435967801578, guid: ec0513df6f443b94d937862fb54e2cb0,
     type: 3}
+  arcRadius: 13.09
+  arcAngle: 15.2
+  patrolRadius: 72.72
 --- !u!23 &7367888359985051219
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -43547,7 +43553,7 @@ BoxCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}

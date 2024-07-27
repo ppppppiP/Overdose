@@ -7,6 +7,7 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Threading.Tasks;
 using Unity.VisualScripting;
+using UnityEditor.IMGUI.Controls;
 using UnityEngine;
 using UnityEngine.AI;
 using UnityServiceLocator;
@@ -34,11 +35,18 @@ public class E_Kaban : MonoBehaviour, IExpert
     [SerializeField] float reloadTime;
     [SerializeField] GameObject Tracer;
     [SerializeField] GameObject SpawnVFX;
+    public float arcRadius = 5f; // Радиус дуги
+    public float arcAngle = 45f; // Угол дуги
+
+    int EnemyID;
 
     bool reloadFlag = true;
+    private Vector3 targetPoint;
+   public float patrolRadius;
 
     void Awake()
     {
+        EnemyID = GetInstanceID();
         agent = GetComponent<NavMeshAgent>();
     }
 
@@ -47,8 +55,8 @@ public class E_Kaban : MonoBehaviour, IExpert
         blackboard = ServiceLocator.For(this).Get<BlackboardController>().GetBlackboard();
         ServiceLocator.For(this).Get<BlackboardController>().RegisterExpert(this);
 
-        isPlayerDetectedKey = blackboard.GetOrRegisterKey("isPlayerDetected");
-        isWithinAttackRangeKey = blackboard.GetOrRegisterKey("isWithinAttackRange");
+        isPlayerDetectedKey = blackboard.GetOrRegisterKey("isPlayerDetected" + EnemyID);
+        isWithinAttackRangeKey = blackboard.GetOrRegisterKey("isWithinAttackRange" + EnemyID);
 
         blackboard.SetValue(isPlayerDetectedKey, false);
         blackboard.SetValue(isWithinAttackRangeKey, false);
@@ -126,14 +134,14 @@ public class E_Kaban : MonoBehaviour, IExpert
                 if (Physics.Raycast(gunPosition.position, direction, out RaycastHit hit))
                 {
                 Instantiate(SpawnVFX, gunPosition.transform.position, gunPosition.transform.rotation);
-                    UnityEngine.Debug.LogAssertion("SHOOOOOOOOOOOOOOOOOOOOOOT");
+                  
                 
                 if (hit.transform.TryGetComponent<PlayerHP>(out PlayerHP damage))
                 {
                     damage.GetDamage(Damage);
                     CameraShake.Instance.ShakeCamera();
                 }
-               ;
+               
                     // логика попадания по врагам будет тут
                     StartCoroutine(TracerRenderer(gunPosition.position, hit.point));
                 }
@@ -143,7 +151,105 @@ public class E_Kaban : MonoBehaviour, IExpert
             reloadFlag = false;
                Reload();
             }
-        
+        Patrol();
+    }
+    private void Patrol()
+    {
+        // Проверяем, достиг ли агент целевой точки
+        if (!isStopped)
+        {
+            StartCoroutine(StopRoutine());
+
+            Vector3 start = transform.position;
+            Vector3 end = GetRandomPointInArc();
+            float radius = 5f; // Параметры дуги
+            float angle = 45f;
+            float duration = 5f; // Длительность движения
+
+            StartCoroutine(MoveAlongArc(start, end, radius, angle, duration));
+        }
+    }
+    private IEnumerator MoveAlongArc(Vector3 start, Vector3 end, float radius, float angle, float duration)
+    {
+        List<Vector3> arcPoints = GenerateRandomArcPoints(start, radius, angle, 10);
+        arcPoints.Add(end);
+
+        float timeElapsed = 0f;
+        Vector3 previousPoint = start;
+
+        while (timeElapsed < duration)
+        {
+            timeElapsed += Time.deltaTime;
+            float t = timeElapsed / duration;
+
+            // Вычисляем текущую точку на дуге
+            int segment = Mathf.FloorToInt(t * (arcPoints.Count - 1));
+            float segmentT = (t * (arcPoints.Count - 1)) - segment;
+
+            Vector3 currentPoint = Vector3.Lerp(arcPoints[segment], arcPoints[segment + 1], segmentT);
+
+            // Обновляем путь агента
+            agent.SetDestination(currentPoint);
+
+            // Вывод отладочной информации
+            UnityEngine.Debug.Log($"Agent Position: {agent.transform.position}, Target Point: {currentPoint}");
+
+            yield return null;
+        }
+
+        // Обеспечиваем, что агент достиг конечной точки
+        agent.SetDestination(end);
+    }
+    private List<Vector3> GenerateRandomArcPoints(Vector3 center, float radius, float angle, int numPoints)
+    {
+        List<Vector3> points = new List<Vector3>();
+
+        for (int i = 0; i < numPoints; i++)
+        {
+            float t = (float)i / (numPoints - 1);
+            float currentAngle = Mathf.Lerp(-angle / 2f, angle / 2f, t);
+
+            // Выбираем случайную точку в радиусе дуги
+            Vector2 randomDirection = UnityEngine.Random.insideUnitCircle * radius;
+            Vector3 point = center + Quaternion.Euler(0, currentAngle, 0) * new Vector3(randomDirection.x, 0, randomDirection.y);
+
+            points.Add(point);
+        }
+
+        return points;
+    }
+    bool isStopped;
+
+    IEnumerator StopRoutine()
+    {
+        isStopped = true;
+        yield return new WaitForSeconds(5f);
+        isStopped = false;
+    }
+
+    // Метод для получения случайной точки в заданном радиусе
+    private Vector3 GetRandomPointInArc()
+    {
+        // Выбираем случайное направление на дуге
+        Vector2 randomDirection = UnityEngine.Random.insideUnitCircle * arcRadius;
+        Vector3 randomPoint = new Vector3(randomDirection.x, 0, randomDirection.y);
+
+        // Поворачиваем случайную точку на дугу
+        float angle = UnityEngine.Random.Range(-arcAngle / 2f, arcAngle / 2f);
+        Quaternion rotation = Quaternion.Euler(0, angle, 0);
+        randomPoint = rotation * randomPoint;
+
+        // Применяем радиус патруля
+        randomPoint += (Vector3)UnityEngine.Random.insideUnitCircle * patrolRadius;
+        randomPoint.y = transform.position.y; // сохраняем высоту текущей позиции
+
+        // Проверяем точку на NavMesh
+        NavMeshHit hit;
+        if (NavMesh.SamplePosition(randomPoint, out hit, patrolRadius, NavMesh.AllAreas))
+        {
+            return hit.position;
+        }
+        return transform.position; // Если не удалось найти точку на NavMesh, остаёмся на месте
     }
     public IEnumerator TracerRenderer(Vector3 start, Vector3 target)
     {

@@ -202,7 +202,7 @@ public class MoveToTarget : IStrategy
 
     public void Reset()
     {
-        agent.ResetPath();
+        //agent.ResetPath();
     }
 }
 public class AttackStrategy : IStrategy
@@ -227,7 +227,7 @@ public class AttackStrategy : IStrategy
         {Debug.LogAssertion("Asdfasdfasdfsadf");
             return Node.Status.Success;
         }
-        agent.Stop();
+        
         tween = agent.transform.DOLookAt(target.position, 0.3f, AxisConstraint.Y);
         
 
