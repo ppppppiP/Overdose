@@ -13,12 +13,13 @@ namespace Controller
         [SerializeField, Range(1.0f, 3.0f)] float SprintAmount = 1.4f;
 
         [SerializeField, Range(5f, 20f)] float Frequency = 13.0f;
-        [SerializeField, Range(50f, 10f)] float Smooth = 24.2f;
+        [SerializeField, Range(500f, -100f)] float Smooth = 24.2f;
         [Header("RotationMovement")]
         [SerializeField] bool EnabledRotationMovement = true;
         [SerializeField, Range(0.1f, 10.0f)] float RotationMultipler = 6f;
-        float ToggleSpeed = 1.5f;
+        public float ToggleSpeed = 1.5f;
         float AmountValue;
+        public float x;
         Vector3 StartPos;
         Vector3 StartRot;
         Vector3 FinalPos;
@@ -27,7 +28,7 @@ namespace Controller
         private void Awake()
         {
             player = GetComponentInParent<CharacterController>();
-            ToggleSpeed = 1.5f;
+
             AmountValue = Amount;
             StartPos = transform.localPosition;
             StartRot = transform.localRotation.eulerAngles;
@@ -62,8 +63,8 @@ namespace Controller
         private void Reset()
         {
             if (transform.localPosition == StartPos) return;
-            FinalPos = Vector3.Lerp(FinalPos, StartPos, 1 * Time.deltaTime);
-            FinalRot = Vector3.Lerp(FinalRot, StartRot, 1 * Time.deltaTime);
+            FinalPos = Vector3.Lerp(FinalPos, StartPos, x * Time.deltaTime);
+            FinalRot = Vector3.Lerp(FinalRot, StartRot, x * Time.deltaTime);
         }
     }
 
