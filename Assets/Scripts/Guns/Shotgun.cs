@@ -26,7 +26,7 @@ public class Shotgun : MonoBehaviour
     [SerializeField] GameObject Tracer;
     [SerializeField] Transform TracerOutPosition;
     [SerializeField] Animator anim;
-
+    [SerializeField] WeaponRecoil recoil;
     void Start()
     {
         currentAmmo = magazineSize; // Инициализация патронов в магазине
@@ -48,6 +48,7 @@ public class Shotgun : MonoBehaviour
             nextTimeToFire = Time.time + 1f / fireRate;
             Shoot();
             Instantiate(ShootingVFX, TracerOutPosition.position, TracerOutPosition.rotation);
+            recoil.Recoil();
         }
     }
 
