@@ -138,14 +138,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 4
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
-=======
     - target: {fileID: 518207216674444728, guid: 07b3982bc8fd01545b7aa68b96991658,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
->>>>>>> Stashed changes
     - target: {fileID: 7448196695512279564, guid: 07b3982bc8fd01545b7aa68b96991658,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -216,14 +213,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 4
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
-=======
     - target: {fileID: 8363645452989286705, guid: 07b3982bc8fd01545b7aa68b96991658,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
->>>>>>> Stashed changes
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -465,14 +459,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 4
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
-=======
     - target: {fileID: 3844402829952621648, guid: b9fe964a804d0374e931113d5c7c60ae,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
->>>>>>> Stashed changes
     - target: {fileID: 7465915477752388568, guid: b9fe964a804d0374e931113d5c7c60ae,
         type: 3}
       propertyPath: m_Name
@@ -483,14 +474,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 4
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
-=======
     - target: {fileID: 7465915477752388568, guid: b9fe964a804d0374e931113d5c7c60ae,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
->>>>>>> Stashed changes
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -502,6 +490,111 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 72799144}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &75251444
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 75251445}
+  - component: {fileID: 75251448}
+  - component: {fileID: 75251447}
+  - component: {fileID: 75251446}
+  m_Layer: 0
+  m_Name: Cube (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &75251445
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 75251444}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.449, y: 0, z: 0.783}
+  m_LocalScale: {x: 0.2955725, y: 0.28270775, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 689264271}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &75251446
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 75251444}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 0
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &75251447
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 75251444}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 257
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 73c176f402d2c2f4d929aa5da7585d17, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &75251448
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 75251444}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1001 &87582752
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -515,14 +608,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 4
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
-=======
     - target: {fileID: 213691383043203049, guid: 5c8982283292b02469042c58ddd47a86,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
->>>>>>> Stashed changes
     - target: {fileID: 330843836028570567, guid: 5c8982283292b02469042c58ddd47a86,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -598,14 +688,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 4
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
-=======
     - target: {fileID: 7755895269597273849, guid: 5c8982283292b02469042c58ddd47a86,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
->>>>>>> Stashed changes
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -877,14 +964,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 4
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
-=======
     - target: {fileID: 2793203351633019134, guid: 4f9fe4a909dd09b4690005ab970dc710,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
->>>>>>> Stashed changes
     - target: {fileID: 4763648520207015287, guid: 4f9fe4a909dd09b4690005ab970dc710,
         type: 3}
       propertyPath: m_Name
@@ -895,14 +979,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 4
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
-=======
     - target: {fileID: 4763648520207015287, guid: 4f9fe4a909dd09b4690005ab970dc710,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
->>>>>>> Stashed changes
     - target: {fileID: 4765282805829209118, guid: 4f9fe4a909dd09b4690005ab970dc710,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -1052,27 +1133,21 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 4
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
-=======
     - target: {fileID: 6744514082038764723, guid: 2bbc94c230ff2244cbbc3003e13add01,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
->>>>>>> Stashed changes
     - target: {fileID: 7045776213430676885, guid: 2bbc94c230ff2244cbbc3003e13add01,
         type: 3}
       propertyPath: m_Layer
       value: 4
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
-=======
     - target: {fileID: 7045776213430676885, guid: 2bbc94c230ff2244cbbc3003e13add01,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
->>>>>>> Stashed changes
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1102,14 +1177,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 4
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
-=======
     - target: {fileID: 2585656087456375284, guid: cc5f11be54d8bfb4c8dd09b6f2f9c9b5,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
->>>>>>> Stashed changes
     - target: {fileID: 4571374255964167676, guid: cc5f11be54d8bfb4c8dd09b6f2f9c9b5,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -1175,14 +1247,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 4
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
-=======
     - target: {fileID: 5194399219618855535, guid: cc5f11be54d8bfb4c8dd09b6f2f9c9b5,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
->>>>>>> Stashed changes
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1673,14 +1742,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 4
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
-=======
     - target: {fileID: 213691383043203049, guid: 5c8982283292b02469042c58ddd47a86,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
->>>>>>> Stashed changes
     - target: {fileID: 330843836028570567, guid: 5c8982283292b02469042c58ddd47a86,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -1751,14 +1817,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 4
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
-=======
     - target: {fileID: 7755895269597273849, guid: 5c8982283292b02469042c58ddd47a86,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
->>>>>>> Stashed changes
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1783,14 +1846,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 4
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
-=======
     - target: {fileID: 518207216674444728, guid: 07b3982bc8fd01545b7aa68b96991658,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
->>>>>>> Stashed changes
     - target: {fileID: 7448196695512279564, guid: 07b3982bc8fd01545b7aa68b96991658,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -1861,14 +1921,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 4
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
-=======
     - target: {fileID: 8363645452989286705, guid: 07b3982bc8fd01545b7aa68b96991658,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
->>>>>>> Stashed changes
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2307,6 +2364,111 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 171252672}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &171321844
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 171321845}
+  - component: {fileID: 171321848}
+  - component: {fileID: 171321847}
+  - component: {fileID: 171321846}
+  m_Layer: 0
+  m_Name: Cube (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &171321845
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 171321844}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.449, y: 0, z: 0.783}
+  m_LocalScale: {x: 0.2955725, y: 0.28270775, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 854837105}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &171321846
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 171321844}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 0
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &171321847
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 171321844}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 257
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 73c176f402d2c2f4d929aa5da7585d17, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &171321848
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 171321844}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1001 &174545324
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2598,19 +2760,11 @@ Transform:
   m_GameObject: {fileID: 181225931}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-<<<<<<< Updated upstream
-  m_LocalPosition: {x: -12.279999, y: 0, z: 7.6900024}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1731740800}
-=======
   m_LocalPosition: {x: -12.029999, y: 0.06773424, z: -14.549999}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 660568509}
->>>>>>> Stashed changes
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &187934102
 PrefabInstance:
@@ -2784,27 +2938,21 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 4
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
-=======
     - target: {fileID: 6744514082038764723, guid: 2bbc94c230ff2244cbbc3003e13add01,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
->>>>>>> Stashed changes
     - target: {fileID: 7045776213430676885, guid: 2bbc94c230ff2244cbbc3003e13add01,
         type: 3}
       propertyPath: m_Layer
       value: 4
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
-=======
     - target: {fileID: 7045776213430676885, guid: 2bbc94c230ff2244cbbc3003e13add01,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
->>>>>>> Stashed changes
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2829,14 +2977,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 4
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
-=======
     - target: {fileID: 2793203351633019134, guid: 4f9fe4a909dd09b4690005ab970dc710,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
->>>>>>> Stashed changes
     - target: {fileID: 4763648520207015287, guid: 4f9fe4a909dd09b4690005ab970dc710,
         type: 3}
       propertyPath: m_Name
@@ -2847,14 +2992,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 4
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
-=======
     - target: {fileID: 4763648520207015287, guid: 4f9fe4a909dd09b4690005ab970dc710,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
->>>>>>> Stashed changes
     - target: {fileID: 4765282805829209118, guid: 4f9fe4a909dd09b4690005ab970dc710,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -2944,14 +3086,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 4
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
-=======
     - target: {fileID: 2585656087456375284, guid: cc5f11be54d8bfb4c8dd09b6f2f9c9b5,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
->>>>>>> Stashed changes
     - target: {fileID: 3681332968637673840, guid: cc5f11be54d8bfb4c8dd09b6f2f9c9b5,
         type: 3}
       propertyPath: m_Enabled
@@ -3022,14 +3161,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 4
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
-=======
     - target: {fileID: 5194399219618855535, guid: cc5f11be54d8bfb4c8dd09b6f2f9c9b5,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
->>>>>>> Stashed changes
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3154,14 +3290,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 4
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
-=======
     - target: {fileID: 213691383043203049, guid: 5c8982283292b02469042c58ddd47a86,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
->>>>>>> Stashed changes
     - target: {fileID: 330843836028570567, guid: 5c8982283292b02469042c58ddd47a86,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -3237,14 +3370,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 4
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
-=======
     - target: {fileID: 7755895269597273849, guid: 5c8982283292b02469042c58ddd47a86,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
->>>>>>> Stashed changes
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3269,14 +3399,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 4
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
-=======
     - target: {fileID: 518207216674444728, guid: 07b3982bc8fd01545b7aa68b96991658,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
->>>>>>> Stashed changes
     - target: {fileID: 7448196695512279564, guid: 07b3982bc8fd01545b7aa68b96991658,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -3347,14 +3474,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 4
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
-=======
     - target: {fileID: 8363645452989286705, guid: 07b3982bc8fd01545b7aa68b96991658,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
->>>>>>> Stashed changes
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3738,14 +3862,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 4
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
-=======
     - target: {fileID: 2585656087456375284, guid: cc5f11be54d8bfb4c8dd09b6f2f9c9b5,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
->>>>>>> Stashed changes
     - target: {fileID: 4571374255964167676, guid: cc5f11be54d8bfb4c8dd09b6f2f9c9b5,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -3811,14 +3932,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 4
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
-=======
     - target: {fileID: 5194399219618855535, guid: cc5f11be54d8bfb4c8dd09b6f2f9c9b5,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
->>>>>>> Stashed changes
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3948,14 +4066,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 4
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
-=======
     - target: {fileID: 73408114109440429, guid: a7eac071fae08424799b1ce21487f755,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
->>>>>>> Stashed changes
     - target: {fileID: 1822946862189872134, guid: a7eac071fae08424799b1ce21487f755,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -4026,14 +4141,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 4
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
-=======
     - target: {fileID: 4060181096331312570, guid: a7eac071fae08424799b1ce21487f755,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
->>>>>>> Stashed changes
     - target: {fileID: 6959012784180154086, guid: a7eac071fae08424799b1ce21487f755,
         type: 3}
       propertyPath: m_Enabled
@@ -4757,14 +4869,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 4
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
-=======
     - target: {fileID: 73408114109440429, guid: a7eac071fae08424799b1ce21487f755,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
->>>>>>> Stashed changes
     - target: {fileID: 1822946862189872134, guid: a7eac071fae08424799b1ce21487f755,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -4835,14 +4944,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 4
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
-=======
     - target: {fileID: 4060181096331312570, guid: a7eac071fae08424799b1ce21487f755,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
->>>>>>> Stashed changes
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5339,14 +5445,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 4
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
-=======
     - target: {fileID: 2793203351633019134, guid: 4f9fe4a909dd09b4690005ab970dc710,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
->>>>>>> Stashed changes
     - target: {fileID: 4763648520207015287, guid: 4f9fe4a909dd09b4690005ab970dc710,
         type: 3}
       propertyPath: m_Name
@@ -5357,14 +5460,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 4
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
-=======
     - target: {fileID: 4763648520207015287, guid: 4f9fe4a909dd09b4690005ab970dc710,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
->>>>>>> Stashed changes
     - target: {fileID: 4765282805829209118, guid: 4f9fe4a909dd09b4690005ab970dc710,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -5584,14 +5684,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 4
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
-=======
     - target: {fileID: 2585656087456375284, guid: cc5f11be54d8bfb4c8dd09b6f2f9c9b5,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
->>>>>>> Stashed changes
     - target: {fileID: 4571374255964167676, guid: cc5f11be54d8bfb4c8dd09b6f2f9c9b5,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -5657,14 +5754,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 4
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
-=======
     - target: {fileID: 5194399219618855535, guid: cc5f11be54d8bfb4c8dd09b6f2f9c9b5,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
->>>>>>> Stashed changes
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5749,14 +5843,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 4
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
-=======
     - target: {fileID: 3844402829952621648, guid: b9fe964a804d0374e931113d5c7c60ae,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
->>>>>>> Stashed changes
     - target: {fileID: 5268323273618113650, guid: b9fe964a804d0374e931113d5c7c60ae,
         type: 3}
       propertyPath: m_Enabled
@@ -5772,14 +5863,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 4
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
-=======
     - target: {fileID: 7465915477752388568, guid: b9fe964a804d0374e931113d5c7c60ae,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
->>>>>>> Stashed changes
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5914,14 +6002,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 4
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
-=======
     - target: {fileID: 2585656087456375284, guid: cc5f11be54d8bfb4c8dd09b6f2f9c9b5,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
->>>>>>> Stashed changes
     - target: {fileID: 4571374255964167676, guid: cc5f11be54d8bfb4c8dd09b6f2f9c9b5,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -5987,14 +6072,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 4
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
-=======
     - target: {fileID: 5194399219618855535, guid: cc5f11be54d8bfb4c8dd09b6f2f9c9b5,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
->>>>>>> Stashed changes
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6413,14 +6495,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 4
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
-=======
     - target: {fileID: 213691383043203049, guid: 5c8982283292b02469042c58ddd47a86,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
->>>>>>> Stashed changes
     - target: {fileID: 330843836028570567, guid: 5c8982283292b02469042c58ddd47a86,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -6491,14 +6570,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 4
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
-=======
     - target: {fileID: 7755895269597273849, guid: 5c8982283292b02469042c58ddd47a86,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
->>>>>>> Stashed changes
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6658,14 +6734,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 4
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
-=======
     - target: {fileID: 2585656087456375284, guid: cc5f11be54d8bfb4c8dd09b6f2f9c9b5,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
->>>>>>> Stashed changes
     - target: {fileID: 4571374255964167676, guid: cc5f11be54d8bfb4c8dd09b6f2f9c9b5,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -6731,14 +6804,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 4
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
-=======
     - target: {fileID: 5194399219618855535, guid: cc5f11be54d8bfb4c8dd09b6f2f9c9b5,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
->>>>>>> Stashed changes
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6768,14 +6838,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 4
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
-=======
     - target: {fileID: 2585656087456375284, guid: cc5f11be54d8bfb4c8dd09b6f2f9c9b5,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
->>>>>>> Stashed changes
     - target: {fileID: 3681332968637673840, guid: cc5f11be54d8bfb4c8dd09b6f2f9c9b5,
         type: 3}
       propertyPath: m_Enabled
@@ -6846,14 +6913,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 4
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
-=======
     - target: {fileID: 5194399219618855535, guid: cc5f11be54d8bfb4c8dd09b6f2f9c9b5,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
->>>>>>> Stashed changes
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7207,14 +7271,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 4
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
-=======
     - target: {fileID: 2793203351633019134, guid: 4f9fe4a909dd09b4690005ab970dc710,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
->>>>>>> Stashed changes
     - target: {fileID: 3456538107125695749, guid: 4f9fe4a909dd09b4690005ab970dc710,
         type: 3}
       propertyPath: m_Enabled
@@ -7230,14 +7291,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 4
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
-=======
     - target: {fileID: 4763648520207015287, guid: 4f9fe4a909dd09b4690005ab970dc710,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
->>>>>>> Stashed changes
     - target: {fileID: 4765282805829209118, guid: 4f9fe4a909dd09b4690005ab970dc710,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -7780,19 +7838,11 @@ Transform:
   m_GameObject: {fileID: 512017792}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-<<<<<<< Updated upstream
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1731740800}
-=======
   m_LocalPosition: {x: 0.25, y: 0.06773424, z: -22.240002}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 660568509}
->>>>>>> Stashed changes
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &513121591
 GameObject:
@@ -8167,14 +8217,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 4
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
-=======
     - target: {fileID: 518207216674444728, guid: 07b3982bc8fd01545b7aa68b96991658,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
->>>>>>> Stashed changes
     - target: {fileID: 7448196695512279564, guid: 07b3982bc8fd01545b7aa68b96991658,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -8245,14 +8292,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 4
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
-=======
     - target: {fileID: 8363645452989286705, guid: 07b3982bc8fd01545b7aa68b96991658,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
->>>>>>> Stashed changes
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8393,14 +8437,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 4
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
-=======
     - target: {fileID: 3844402829952621648, guid: b9fe964a804d0374e931113d5c7c60ae,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
->>>>>>> Stashed changes
     - target: {fileID: 7465915477752388568, guid: b9fe964a804d0374e931113d5c7c60ae,
         type: 3}
       propertyPath: m_Name
@@ -8411,14 +8452,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 4
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
-=======
     - target: {fileID: 7465915477752388568, guid: b9fe964a804d0374e931113d5c7c60ae,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
->>>>>>> Stashed changes
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8503,14 +8541,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 4
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
-=======
     - target: {fileID: 3844402829952621648, guid: b9fe964a804d0374e931113d5c7c60ae,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
->>>>>>> Stashed changes
     - target: {fileID: 5268323273618113650, guid: b9fe964a804d0374e931113d5c7c60ae,
         type: 3}
       propertyPath: m_Enabled
@@ -8526,14 +8561,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 4
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
-=======
     - target: {fileID: 7465915477752388568, guid: b9fe964a804d0374e931113d5c7c60ae,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
->>>>>>> Stashed changes
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8712,14 +8744,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 4
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
-=======
     - target: {fileID: 3844402829952621648, guid: b9fe964a804d0374e931113d5c7c60ae,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
->>>>>>> Stashed changes
     - target: {fileID: 7465915477752388568, guid: b9fe964a804d0374e931113d5c7c60ae,
         type: 3}
       propertyPath: m_Name
@@ -8730,14 +8759,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 4
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
-=======
     - target: {fileID: 7465915477752388568, guid: b9fe964a804d0374e931113d5c7c60ae,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
->>>>>>> Stashed changes
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8885,8 +8911,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 562348226}
   m_PrefabAsset: {fileID: 0}
-<<<<<<< Updated upstream
-=======
 --- !u!1 &563293637
 GameObject:
   m_ObjectHideFlags: 0
@@ -9069,7 +9093,6 @@ Transform:
   - {fileID: 655091800}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
->>>>>>> Stashed changes
 --- !u!1001 &564400774
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9148,27 +9171,21 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 4
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
-=======
     - target: {fileID: 6744514082038764723, guid: 2bbc94c230ff2244cbbc3003e13add01,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
->>>>>>> Stashed changes
     - target: {fileID: 7045776213430676885, guid: 2bbc94c230ff2244cbbc3003e13add01,
         type: 3}
       propertyPath: m_Layer
       value: 4
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
-=======
     - target: {fileID: 7045776213430676885, guid: 2bbc94c230ff2244cbbc3003e13add01,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
->>>>>>> Stashed changes
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9253,14 +9270,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 4
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
-=======
     - target: {fileID: 3844402829952621648, guid: b9fe964a804d0374e931113d5c7c60ae,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
->>>>>>> Stashed changes
     - target: {fileID: 7465915477752388568, guid: b9fe964a804d0374e931113d5c7c60ae,
         type: 3}
       propertyPath: m_Name
@@ -9271,14 +9285,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 4
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
-=======
     - target: {fileID: 7465915477752388568, guid: b9fe964a804d0374e931113d5c7c60ae,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
->>>>>>> Stashed changes
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9368,27 +9379,21 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 4
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
-=======
     - target: {fileID: 6744514082038764723, guid: 2bbc94c230ff2244cbbc3003e13add01,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
->>>>>>> Stashed changes
     - target: {fileID: 7045776213430676885, guid: 2bbc94c230ff2244cbbc3003e13add01,
         type: 3}
       propertyPath: m_Layer
       value: 4
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
-=======
     - target: {fileID: 7045776213430676885, guid: 2bbc94c230ff2244cbbc3003e13add01,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
->>>>>>> Stashed changes
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -14302,14 +14307,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 4
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
-=======
     - target: {fileID: 3844402829952621648, guid: b9fe964a804d0374e931113d5c7c60ae,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
->>>>>>> Stashed changes
     - target: {fileID: 7465915477752388568, guid: b9fe964a804d0374e931113d5c7c60ae,
         type: 3}
       propertyPath: m_Name
@@ -14320,14 +14322,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 4
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
-=======
     - target: {fileID: 7465915477752388568, guid: b9fe964a804d0374e931113d5c7c60ae,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
->>>>>>> Stashed changes
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -14450,14 +14449,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 4
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
-=======
     - target: {fileID: 518207216674444728, guid: 07b3982bc8fd01545b7aa68b96991658,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
->>>>>>> Stashed changes
     - target: {fileID: 7448196695512279564, guid: 07b3982bc8fd01545b7aa68b96991658,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -14528,14 +14524,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 4
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
-=======
     - target: {fileID: 8363645452989286705, guid: 07b3982bc8fd01545b7aa68b96991658,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
->>>>>>> Stashed changes
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -14638,14 +14631,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 4
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
-=======
     - target: {fileID: 518207216674444728, guid: 07b3982bc8fd01545b7aa68b96991658,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
->>>>>>> Stashed changes
     - target: {fileID: 6519117293942934266, guid: 07b3982bc8fd01545b7aa68b96991658,
         type: 3}
       propertyPath: m_Enabled
@@ -14721,14 +14711,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 4
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
-=======
     - target: {fileID: 8363645452989286705, guid: 07b3982bc8fd01545b7aa68b96991658,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
->>>>>>> Stashed changes
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -14841,14 +14828,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 4
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
-=======
     - target: {fileID: 73408114109440429, guid: a7eac071fae08424799b1ce21487f755,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
->>>>>>> Stashed changes
     - target: {fileID: 1822946862189872134, guid: a7eac071fae08424799b1ce21487f755,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -14919,14 +14903,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 4
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
-=======
     - target: {fileID: 4060181096331312570, guid: a7eac071fae08424799b1ce21487f755,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
->>>>>>> Stashed changes
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -14956,14 +14937,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 4
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
-=======
     - target: {fileID: 2585656087456375284, guid: cc5f11be54d8bfb4c8dd09b6f2f9c9b5,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
->>>>>>> Stashed changes
     - target: {fileID: 4571374255964167676, guid: cc5f11be54d8bfb4c8dd09b6f2f9c9b5,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -15029,14 +15007,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 4
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
-=======
     - target: {fileID: 5194399219618855535, guid: cc5f11be54d8bfb4c8dd09b6f2f9c9b5,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
->>>>>>> Stashed changes
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -15061,14 +15036,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 4
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
-=======
     - target: {fileID: 73408114109440429, guid: a7eac071fae08424799b1ce21487f755,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
->>>>>>> Stashed changes
     - target: {fileID: 1822946862189872134, guid: a7eac071fae08424799b1ce21487f755,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -15139,14 +15111,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 4
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
-=======
     - target: {fileID: 4060181096331312570, guid: a7eac071fae08424799b1ce21487f755,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
->>>>>>> Stashed changes
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -15376,14 +15345,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 4
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
-=======
     - target: {fileID: 213691383043203049, guid: 5c8982283292b02469042c58ddd47a86,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
->>>>>>> Stashed changes
     - target: {fileID: 330843836028570567, guid: 5c8982283292b02469042c58ddd47a86,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -15459,14 +15425,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 4
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
-=======
     - target: {fileID: 7755895269597273849, guid: 5c8982283292b02469042c58ddd47a86,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
->>>>>>> Stashed changes
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -15571,6 +15534,111 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 23ed05438369250409fc72f78b77debb, type: 3}
+--- !u!1 &655091799
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 655091800}
+  - component: {fileID: 655091803}
+  - component: {fileID: 655091802}
+  - component: {fileID: 655091801}
+  m_Layer: 0
+  m_Name: Cube (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &655091800
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 655091799}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.449, y: 0, z: 0.783}
+  m_LocalScale: {x: 0.2955725, y: 0.28270775, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 563293644}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &655091801
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 655091799}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 0
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &655091802
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 655091799}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 257
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 73c176f402d2c2f4d929aa5da7585d17, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &655091803
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 655091799}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1001 &655410646
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15584,14 +15652,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 4
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
-=======
     - target: {fileID: 213691383043203049, guid: 5c8982283292b02469042c58ddd47a86,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
->>>>>>> Stashed changes
     - target: {fileID: 330843836028570567, guid: 5c8982283292b02469042c58ddd47a86,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -15662,14 +15727,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 4
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
-=======
     - target: {fileID: 7755895269597273849, guid: 5c8982283292b02469042c58ddd47a86,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
->>>>>>> Stashed changes
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -16198,6 +16260,111 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 669365476}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &671552901
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 671552902}
+  - component: {fileID: 671552905}
+  - component: {fileID: 671552904}
+  - component: {fileID: 671552903}
+  m_Layer: 0
+  m_Name: Cube (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &671552902
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 671552901}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.449, y: 0, z: 0.783}
+  m_LocalScale: {x: 0.2955725, y: 0.28270775, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 732280694}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &671552903
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 671552901}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 0
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &671552904
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 671552901}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 257
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 73c176f402d2c2f4d929aa5da7585d17, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &671552905
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 671552901}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1001 &672887719
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16679,8 +16846,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 688834056}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
-<<<<<<< Updated upstream
-=======
 --- !u!1 &689264264
 GameObject:
   m_ObjectHideFlags: 0
@@ -16863,7 +17028,6 @@ Transform:
   - {fileID: 75251445}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
->>>>>>> Stashed changes
 --- !u!1001 &706344960
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17189,8 +17353,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 731723950}
   m_PrefabAsset: {fileID: 0}
-<<<<<<< Updated upstream
-=======
 --- !u!1 &732280687
 GameObject:
   m_ObjectHideFlags: 0
@@ -17590,7 +17752,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
->>>>>>> Stashed changes
 --- !u!1001 &745011142
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17822,14 +17983,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 4
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
-=======
     - target: {fileID: 2585656087456375284, guid: cc5f11be54d8bfb4c8dd09b6f2f9c9b5,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
->>>>>>> Stashed changes
     - target: {fileID: 4571374255964167676, guid: cc5f11be54d8bfb4c8dd09b6f2f9c9b5,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -17895,14 +18053,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 4
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
-=======
     - target: {fileID: 5194399219618855535, guid: cc5f11be54d8bfb4c8dd09b6f2f9c9b5,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
->>>>>>> Stashed changes
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -17992,27 +18147,21 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 4
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
-=======
     - target: {fileID: 6744514082038764723, guid: 2bbc94c230ff2244cbbc3003e13add01,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
->>>>>>> Stashed changes
     - target: {fileID: 7045776213430676885, guid: 2bbc94c230ff2244cbbc3003e13add01,
         type: 3}
       propertyPath: m_Layer
       value: 4
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
-=======
     - target: {fileID: 7045776213430676885, guid: 2bbc94c230ff2244cbbc3003e13add01,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
->>>>>>> Stashed changes
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -18048,14 +18197,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 4
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
-=======
     - target: {fileID: 2585656087456375284, guid: cc5f11be54d8bfb4c8dd09b6f2f9c9b5,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
->>>>>>> Stashed changes
     - target: {fileID: 4571374255964167676, guid: cc5f11be54d8bfb4c8dd09b6f2f9c9b5,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -18121,14 +18267,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 4
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
-=======
     - target: {fileID: 5194399219618855535, guid: cc5f11be54d8bfb4c8dd09b6f2f9c9b5,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
->>>>>>> Stashed changes
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -18460,14 +18603,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 4
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
-=======
     - target: {fileID: 73408114109440429, guid: a7eac071fae08424799b1ce21487f755,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
->>>>>>> Stashed changes
     - target: {fileID: 1822946862189872134, guid: a7eac071fae08424799b1ce21487f755,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -18538,14 +18678,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 4
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
-=======
     - target: {fileID: 4060181096331312570, guid: a7eac071fae08424799b1ce21487f755,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
->>>>>>> Stashed changes
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -18680,14 +18817,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 4
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
-=======
     - target: {fileID: 518207216674444728, guid: 07b3982bc8fd01545b7aa68b96991658,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
->>>>>>> Stashed changes
     - target: {fileID: 7448196695512279564, guid: 07b3982bc8fd01545b7aa68b96991658,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -18758,14 +18892,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 4
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
-=======
     - target: {fileID: 8363645452989286705, guid: 07b3982bc8fd01545b7aa68b96991658,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
->>>>>>> Stashed changes
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -18795,14 +18926,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 4
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
-=======
     - target: {fileID: 2585656087456375284, guid: cc5f11be54d8bfb4c8dd09b6f2f9c9b5,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
->>>>>>> Stashed changes
     - target: {fileID: 3681332968637673840, guid: cc5f11be54d8bfb4c8dd09b6f2f9c9b5,
         type: 3}
       propertyPath: m_Enabled
@@ -18873,14 +19001,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 4
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
-=======
     - target: {fileID: 5194399219618855535, guid: cc5f11be54d8bfb4c8dd09b6f2f9c9b5,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
->>>>>>> Stashed changes
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -18905,14 +19030,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 4
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
-=======
     - target: {fileID: 213691383043203049, guid: 5c8982283292b02469042c58ddd47a86,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
->>>>>>> Stashed changes
     - target: {fileID: 330843836028570567, guid: 5c8982283292b02469042c58ddd47a86,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -18983,14 +19105,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 4
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
-=======
     - target: {fileID: 7755895269597273849, guid: 5c8982283292b02469042c58ddd47a86,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
->>>>>>> Stashed changes
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -19015,14 +19134,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 4
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
-=======
     - target: {fileID: 213691383043203049, guid: 5c8982283292b02469042c58ddd47a86,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
->>>>>>> Stashed changes
     - target: {fileID: 330843836028570567, guid: 5c8982283292b02469042c58ddd47a86,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -19093,14 +19209,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 4
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
-=======
     - target: {fileID: 7755895269597273849, guid: 5c8982283292b02469042c58ddd47a86,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
->>>>>>> Stashed changes
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -19242,8 +19355,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 842034087}
   m_PrefabAsset: {fileID: 0}
-<<<<<<< Updated upstream
-=======
 --- !u!1 &854837098
 GameObject:
   m_ObjectHideFlags: 0
@@ -19426,7 +19537,6 @@ Transform:
   - {fileID: 171321845}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
->>>>>>> Stashed changes
 --- !u!1001 &863791252
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19650,14 +19760,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 4
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
-=======
     - target: {fileID: 2585656087456375284, guid: cc5f11be54d8bfb4c8dd09b6f2f9c9b5,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
->>>>>>> Stashed changes
     - target: {fileID: 3681332968637673840, guid: cc5f11be54d8bfb4c8dd09b6f2f9c9b5,
         type: 3}
       propertyPath: m_Enabled
@@ -19728,14 +19835,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 4
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
-=======
     - target: {fileID: 5194399219618855535, guid: cc5f11be54d8bfb4c8dd09b6f2f9c9b5,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
->>>>>>> Stashed changes
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -19760,14 +19864,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 4
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
-=======
     - target: {fileID: 213691383043203049, guid: 5c8982283292b02469042c58ddd47a86,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
->>>>>>> Stashed changes
     - target: {fileID: 330843836028570567, guid: 5c8982283292b02469042c58ddd47a86,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -19838,14 +19939,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 4
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
-=======
     - target: {fileID: 7755895269597273849, guid: 5c8982283292b02469042c58ddd47a86,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
->>>>>>> Stashed changes
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -20067,8 +20165,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 889396899}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
-<<<<<<< Updated upstream
-=======
 --- !u!1 &892020640
 GameObject:
   m_ObjectHideFlags: 0
@@ -20152,7 +20248,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 892020640}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
->>>>>>> Stashed changes
 --- !u!1001 &893475969
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -20247,8 +20342,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 893475969}
   m_PrefabAsset: {fileID: 0}
-<<<<<<< Updated upstream
-=======
 --- !u!1001 &899518447
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -20635,7 +20728,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 925923854}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
->>>>>>> Stashed changes
 --- !u!1001 &942964772
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -20817,14 +20909,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 4
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
-=======
     - target: {fileID: 73408114109440429, guid: a7eac071fae08424799b1ce21487f755,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
->>>>>>> Stashed changes
     - target: {fileID: 1822946862189872134, guid: a7eac071fae08424799b1ce21487f755,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -20895,14 +20984,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 4
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
-=======
     - target: {fileID: 4060181096331312570, guid: a7eac071fae08424799b1ce21487f755,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
->>>>>>> Stashed changes
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -20992,27 +21078,21 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 4
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
-=======
     - target: {fileID: 6744514082038764723, guid: 2bbc94c230ff2244cbbc3003e13add01,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
->>>>>>> Stashed changes
     - target: {fileID: 7045776213430676885, guid: 2bbc94c230ff2244cbbc3003e13add01,
         type: 3}
       propertyPath: m_Layer
       value: 4
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
-=======
     - target: {fileID: 7045776213430676885, guid: 2bbc94c230ff2244cbbc3003e13add01,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
->>>>>>> Stashed changes
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -21254,14 +21334,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 4
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
-=======
     - target: {fileID: 213691383043203049, guid: 5c8982283292b02469042c58ddd47a86,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
->>>>>>> Stashed changes
     - target: {fileID: 330843836028570567, guid: 5c8982283292b02469042c58ddd47a86,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -21332,14 +21409,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 4
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
-=======
     - target: {fileID: 7755895269597273849, guid: 5c8982283292b02469042c58ddd47a86,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
->>>>>>> Stashed changes
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -21370,14 +21444,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 4
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
-=======
     - target: {fileID: 2793203351633019134, guid: 4f9fe4a909dd09b4690005ab970dc710,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
->>>>>>> Stashed changes
     - target: {fileID: 3456538107125695749, guid: 4f9fe4a909dd09b4690005ab970dc710,
         type: 3}
       propertyPath: m_Enabled
@@ -21393,14 +21464,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 4
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
-=======
     - target: {fileID: 4763648520207015287, guid: 4f9fe4a909dd09b4690005ab970dc710,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
->>>>>>> Stashed changes
     - target: {fileID: 4765282805829209118, guid: 4f9fe4a909dd09b4690005ab970dc710,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -21590,14 +21658,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 4
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
-=======
     - target: {fileID: 518207216674444728, guid: 07b3982bc8fd01545b7aa68b96991658,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
->>>>>>> Stashed changes
     - target: {fileID: 6519117293942934266, guid: 07b3982bc8fd01545b7aa68b96991658,
         type: 3}
       propertyPath: m_Enabled
@@ -21673,14 +21738,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 4
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
-=======
     - target: {fileID: 8363645452989286705, guid: 07b3982bc8fd01545b7aa68b96991658,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
->>>>>>> Stashed changes
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -21898,14 +21960,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 4
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
-=======
     - target: {fileID: 213691383043203049, guid: 5c8982283292b02469042c58ddd47a86,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
->>>>>>> Stashed changes
     - target: {fileID: 330843836028570567, guid: 5c8982283292b02469042c58ddd47a86,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -21976,14 +22035,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 4
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
-=======
     - target: {fileID: 7755895269597273849, guid: 5c8982283292b02469042c58ddd47a86,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
->>>>>>> Stashed changes
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -22412,14 +22468,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 4
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
-=======
     - target: {fileID: 213691383043203049, guid: 5c8982283292b02469042c58ddd47a86,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
->>>>>>> Stashed changes
     - target: {fileID: 330843836028570567, guid: 5c8982283292b02469042c58ddd47a86,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -22495,14 +22548,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 4
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
-=======
     - target: {fileID: 7755895269597273849, guid: 5c8982283292b02469042c58ddd47a86,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
->>>>>>> Stashed changes
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -22663,14 +22713,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 4
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
-=======
     - target: {fileID: 73408114109440429, guid: a7eac071fae08424799b1ce21487f755,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
->>>>>>> Stashed changes
     - target: {fileID: 1822946862189872134, guid: a7eac071fae08424799b1ce21487f755,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -22741,14 +22788,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 4
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
-=======
     - target: {fileID: 4060181096331312570, guid: a7eac071fae08424799b1ce21487f755,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
->>>>>>> Stashed changes
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -25032,14 +25076,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 4
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
-=======
     - target: {fileID: 2793203351633019134, guid: 4f9fe4a909dd09b4690005ab970dc710,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
->>>>>>> Stashed changes
     - target: {fileID: 4763648520207015287, guid: 4f9fe4a909dd09b4690005ab970dc710,
         type: 3}
       propertyPath: m_Name
@@ -25050,14 +25091,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 4
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
-=======
     - target: {fileID: 4763648520207015287, guid: 4f9fe4a909dd09b4690005ab970dc710,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
->>>>>>> Stashed changes
     - target: {fileID: 4765282805829209118, guid: 4f9fe4a909dd09b4690005ab970dc710,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -25160,19 +25198,11 @@ Transform:
   m_GameObject: {fileID: 1141153539}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-<<<<<<< Updated upstream
-  m_LocalPosition: {x: -13.09, y: 0, z: -3.9799995}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1731740800}
-=======
   m_LocalPosition: {x: -12.84, y: 0.06773424, z: -26.220001}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 660568509}
->>>>>>> Stashed changes
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1145001406 stripped
 Transform:
@@ -25462,27 +25492,21 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 4
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
-=======
     - target: {fileID: 6744514082038764723, guid: 2bbc94c230ff2244cbbc3003e13add01,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
->>>>>>> Stashed changes
     - target: {fileID: 7045776213430676885, guid: 2bbc94c230ff2244cbbc3003e13add01,
         type: 3}
       propertyPath: m_Layer
       value: 4
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
-=======
     - target: {fileID: 7045776213430676885, guid: 2bbc94c230ff2244cbbc3003e13add01,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
->>>>>>> Stashed changes
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -25611,7 +25635,7 @@ GameObject:
   - component: {fileID: 1174458745}
   - component: {fileID: 1174458744}
   - component: {fileID: 1174458743}
-  m_Layer: 0
+  m_Layer: 4
   m_Name: Flor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25778,14 +25802,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 4
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
-=======
     - target: {fileID: 3844402829952621648, guid: b9fe964a804d0374e931113d5c7c60ae,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
->>>>>>> Stashed changes
     - target: {fileID: 7465915477752388568, guid: b9fe964a804d0374e931113d5c7c60ae,
         type: 3}
       propertyPath: m_Name
@@ -25796,14 +25817,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 4
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
-=======
     - target: {fileID: 7465915477752388568, guid: b9fe964a804d0374e931113d5c7c60ae,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
->>>>>>> Stashed changes
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -25860,7 +25878,7 @@ CapsuleCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 1
   m_ProvidesContacts: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Radius: 0.5
   m_Height: 2
@@ -25995,11 +26013,7 @@ Transform:
   m_GameObject: {fileID: 1188287985}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-<<<<<<< Updated upstream
-  m_LocalPosition: {x: 46.41, y: 6.86, z: -62.21}
-=======
   m_LocalPosition: {x: 46.3, y: 6.67, z: -55.7}
->>>>>>> Stashed changes
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -26020,14 +26034,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 4
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
-=======
     - target: {fileID: 73408114109440429, guid: a7eac071fae08424799b1ce21487f755,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
->>>>>>> Stashed changes
     - target: {fileID: 1822946862189872134, guid: a7eac071fae08424799b1ce21487f755,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -26098,14 +26109,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 4
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
-=======
     - target: {fileID: 4060181096331312570, guid: a7eac071fae08424799b1ce21487f755,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
->>>>>>> Stashed changes
     - target: {fileID: 6959012784180154086, guid: a7eac071fae08424799b1ce21487f755,
         type: 3}
       propertyPath: m_Enabled
@@ -26959,14 +26967,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 4
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
-=======
     - target: {fileID: 3844402829952621648, guid: b9fe964a804d0374e931113d5c7c60ae,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
->>>>>>> Stashed changes
     - target: {fileID: 7465915477752388568, guid: b9fe964a804d0374e931113d5c7c60ae,
         type: 3}
       propertyPath: m_Name
@@ -26977,14 +26982,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 4
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
-=======
     - target: {fileID: 7465915477752388568, guid: b9fe964a804d0374e931113d5c7c60ae,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
->>>>>>> Stashed changes
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -27101,14 +27103,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 4
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
-=======
     - target: {fileID: 518207216674444728, guid: 07b3982bc8fd01545b7aa68b96991658,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
->>>>>>> Stashed changes
     - target: {fileID: 7448196695512279564, guid: 07b3982bc8fd01545b7aa68b96991658,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -27179,14 +27178,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 4
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
-=======
     - target: {fileID: 8363645452989286705, guid: 07b3982bc8fd01545b7aa68b96991658,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
->>>>>>> Stashed changes
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -27211,14 +27207,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 4
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
-=======
     - target: {fileID: 213691383043203049, guid: 5c8982283292b02469042c58ddd47a86,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
->>>>>>> Stashed changes
     - target: {fileID: 330843836028570567, guid: 5c8982283292b02469042c58ddd47a86,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -27289,14 +27282,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 4
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
-=======
     - target: {fileID: 7755895269597273849, guid: 5c8982283292b02469042c58ddd47a86,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
->>>>>>> Stashed changes
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -27381,14 +27371,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 4
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
-=======
     - target: {fileID: 3844402829952621648, guid: b9fe964a804d0374e931113d5c7c60ae,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
->>>>>>> Stashed changes
     - target: {fileID: 5268323273618113650, guid: b9fe964a804d0374e931113d5c7c60ae,
         type: 3}
       propertyPath: m_Enabled
@@ -27404,14 +27391,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 4
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
-=======
     - target: {fileID: 7465915477752388568, guid: b9fe964a804d0374e931113d5c7c60ae,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
->>>>>>> Stashed changes
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -27441,14 +27425,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 4
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
-=======
     - target: {fileID: 2585656087456375284, guid: cc5f11be54d8bfb4c8dd09b6f2f9c9b5,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
->>>>>>> Stashed changes
     - target: {fileID: 4571374255964167676, guid: cc5f11be54d8bfb4c8dd09b6f2f9c9b5,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -27514,14 +27495,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 4
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
-=======
     - target: {fileID: 5194399219618855535, guid: cc5f11be54d8bfb4c8dd09b6f2f9c9b5,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
->>>>>>> Stashed changes
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -27546,14 +27524,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 4
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
-=======
     - target: {fileID: 73408114109440429, guid: a7eac071fae08424799b1ce21487f755,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
->>>>>>> Stashed changes
     - target: {fileID: 1822946862189872134, guid: a7eac071fae08424799b1ce21487f755,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -27624,14 +27599,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 4
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
-=======
     - target: {fileID: 4060181096331312570, guid: a7eac071fae08424799b1ce21487f755,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
->>>>>>> Stashed changes
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -27789,8 +27761,6 @@ RectTransform:
   m_AnchoredPosition: {x: 3.7451, y: 4.4941}
   m_SizeDelta: {x: 260.3694, y: 200.7777}
   m_Pivot: {x: 0.5, y: 0.5}
-<<<<<<< Updated upstream
-=======
 --- !u!1 &1298732527
 GameObject:
   m_ObjectHideFlags: 0
@@ -27880,7 +27850,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 899518447}
   m_PrefabAsset: {fileID: 0}
->>>>>>> Stashed changes
 --- !u!1001 &1303694484
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -27894,14 +27863,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 4
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
-=======
     - target: {fileID: 2793203351633019134, guid: 4f9fe4a909dd09b4690005ab970dc710,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
->>>>>>> Stashed changes
     - target: {fileID: 3456538107125695749, guid: 4f9fe4a909dd09b4690005ab970dc710,
         type: 3}
       propertyPath: m_Enabled
@@ -27917,14 +27883,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 4
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
-=======
     - target: {fileID: 4763648520207015287, guid: 4f9fe4a909dd09b4690005ab970dc710,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
->>>>>>> Stashed changes
     - target: {fileID: 4765282805829209118, guid: 4f9fe4a909dd09b4690005ab970dc710,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -28517,14 +28480,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 4
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
-=======
     - target: {fileID: 213691383043203049, guid: 5c8982283292b02469042c58ddd47a86,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
->>>>>>> Stashed changes
     - target: {fileID: 330843836028570567, guid: 5c8982283292b02469042c58ddd47a86,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -28595,14 +28555,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 4
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
-=======
     - target: {fileID: 7755895269597273849, guid: 5c8982283292b02469042c58ddd47a86,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
->>>>>>> Stashed changes
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -29551,19 +29508,11 @@ Transform:
   m_GameObject: {fileID: 1451896710}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-<<<<<<< Updated upstream
-  m_LocalPosition: {x: -8.939999, y: 0, z: 4.1000023}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1731740800}
-=======
   m_LocalPosition: {x: -8.689999, y: 0.06773424, z: -18.14}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 660568509}
->>>>>>> Stashed changes
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1451910087
 GameObject:
@@ -29683,14 +29632,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 4
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
-=======
     - target: {fileID: 2793203351633019134, guid: 4f9fe4a909dd09b4690005ab970dc710,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
->>>>>>> Stashed changes
     - target: {fileID: 4763648520207015287, guid: 4f9fe4a909dd09b4690005ab970dc710,
         type: 3}
       propertyPath: m_Name
@@ -29701,14 +29647,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 4
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
-=======
     - target: {fileID: 4763648520207015287, guid: 4f9fe4a909dd09b4690005ab970dc710,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
->>>>>>> Stashed changes
     - target: {fileID: 4765282805829209118, guid: 4f9fe4a909dd09b4690005ab970dc710,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -29995,27 +29938,21 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 4
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
-=======
     - target: {fileID: 6744514082038764723, guid: 2bbc94c230ff2244cbbc3003e13add01,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
->>>>>>> Stashed changes
     - target: {fileID: 7045776213430676885, guid: 2bbc94c230ff2244cbbc3003e13add01,
         type: 3}
       propertyPath: m_Layer
       value: 4
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
-=======
     - target: {fileID: 7045776213430676885, guid: 2bbc94c230ff2244cbbc3003e13add01,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
->>>>>>> Stashed changes
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -30040,14 +29977,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 4
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
-=======
     - target: {fileID: 518207216674444728, guid: 07b3982bc8fd01545b7aa68b96991658,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
->>>>>>> Stashed changes
     - target: {fileID: 7448196695512279564, guid: 07b3982bc8fd01545b7aa68b96991658,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -30118,14 +30052,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 4
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
-=======
     - target: {fileID: 8363645452989286705, guid: 07b3982bc8fd01545b7aa68b96991658,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
->>>>>>> Stashed changes
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -30325,27 +30256,21 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 4
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
-=======
     - target: {fileID: 6744514082038764723, guid: 2bbc94c230ff2244cbbc3003e13add01,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
->>>>>>> Stashed changes
     - target: {fileID: 7045776213430676885, guid: 2bbc94c230ff2244cbbc3003e13add01,
         type: 3}
       propertyPath: m_Layer
       value: 4
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
-=======
     - target: {fileID: 7045776213430676885, guid: 2bbc94c230ff2244cbbc3003e13add01,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
->>>>>>> Stashed changes
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -30430,14 +30355,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 4
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
-=======
     - target: {fileID: 3844402829952621648, guid: b9fe964a804d0374e931113d5c7c60ae,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
->>>>>>> Stashed changes
     - target: {fileID: 7465915477752388568, guid: b9fe964a804d0374e931113d5c7c60ae,
         type: 3}
       propertyPath: m_Name
@@ -30448,14 +30370,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 4
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
-=======
     - target: {fileID: 7465915477752388568, guid: b9fe964a804d0374e931113d5c7c60ae,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
->>>>>>> Stashed changes
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -30545,27 +30464,21 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 4
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
-=======
     - target: {fileID: 6744514082038764723, guid: 2bbc94c230ff2244cbbc3003e13add01,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
->>>>>>> Stashed changes
     - target: {fileID: 7045776213430676885, guid: 2bbc94c230ff2244cbbc3003e13add01,
         type: 3}
       propertyPath: m_Layer
       value: 4
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
-=======
     - target: {fileID: 7045776213430676885, guid: 2bbc94c230ff2244cbbc3003e13add01,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
->>>>>>> Stashed changes
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -30688,14 +30601,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 4
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
-=======
     - target: {fileID: 2585656087456375284, guid: cc5f11be54d8bfb4c8dd09b6f2f9c9b5,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
->>>>>>> Stashed changes
     - target: {fileID: 4571374255964167676, guid: cc5f11be54d8bfb4c8dd09b6f2f9c9b5,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -30761,14 +30671,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 4
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
-=======
     - target: {fileID: 5194399219618855535, guid: cc5f11be54d8bfb4c8dd09b6f2f9c9b5,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
->>>>>>> Stashed changes
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -30923,14 +30830,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 4
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
-=======
     - target: {fileID: 518207216674444728, guid: 07b3982bc8fd01545b7aa68b96991658,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
->>>>>>> Stashed changes
     - target: {fileID: 7448196695512279564, guid: 07b3982bc8fd01545b7aa68b96991658,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -31001,14 +30905,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 4
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
-=======
     - target: {fileID: 8363645452989286705, guid: 07b3982bc8fd01545b7aa68b96991658,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
->>>>>>> Stashed changes
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -31033,14 +30934,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 4
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
-=======
     - target: {fileID: 73408114109440429, guid: a7eac071fae08424799b1ce21487f755,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
->>>>>>> Stashed changes
     - target: {fileID: 1822946862189872134, guid: a7eac071fae08424799b1ce21487f755,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -31111,14 +31009,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 4
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
-=======
     - target: {fileID: 4060181096331312570, guid: a7eac071fae08424799b1ce21487f755,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
->>>>>>> Stashed changes
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -31143,14 +31038,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 4
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
-=======
     - target: {fileID: 518207216674444728, guid: 07b3982bc8fd01545b7aa68b96991658,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
->>>>>>> Stashed changes
     - target: {fileID: 6519117293942934266, guid: 07b3982bc8fd01545b7aa68b96991658,
         type: 3}
       propertyPath: m_Enabled
@@ -31226,14 +31118,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 4
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
-=======
     - target: {fileID: 8363645452989286705, guid: 07b3982bc8fd01545b7aa68b96991658,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
->>>>>>> Stashed changes
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -31528,14 +31417,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 4
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
-=======
     - target: {fileID: 3844402829952621648, guid: b9fe964a804d0374e931113d5c7c60ae,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
->>>>>>> Stashed changes
     - target: {fileID: 7465915477752388568, guid: b9fe964a804d0374e931113d5c7c60ae,
         type: 3}
       propertyPath: m_Name
@@ -31546,14 +31432,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 4
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
-=======
     - target: {fileID: 7465915477752388568, guid: b9fe964a804d0374e931113d5c7c60ae,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
->>>>>>> Stashed changes
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -31861,14 +31744,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 4
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
-=======
     - target: {fileID: 3844402829952621648, guid: b9fe964a804d0374e931113d5c7c60ae,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
->>>>>>> Stashed changes
     - target: {fileID: 5268323273618113650, guid: b9fe964a804d0374e931113d5c7c60ae,
         type: 3}
       propertyPath: m_Enabled
@@ -31884,14 +31764,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 4
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
-=======
     - target: {fileID: 7465915477752388568, guid: b9fe964a804d0374e931113d5c7c60ae,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
->>>>>>> Stashed changes
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -31981,27 +31858,21 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 4
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
-=======
     - target: {fileID: 6744514082038764723, guid: 2bbc94c230ff2244cbbc3003e13add01,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
->>>>>>> Stashed changes
     - target: {fileID: 7045776213430676885, guid: 2bbc94c230ff2244cbbc3003e13add01,
         type: 3}
       propertyPath: m_Layer
       value: 4
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
-=======
     - target: {fileID: 7045776213430676885, guid: 2bbc94c230ff2244cbbc3003e13add01,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
->>>>>>> Stashed changes
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -32031,14 +31902,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 4
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
-=======
     - target: {fileID: 2585656087456375284, guid: cc5f11be54d8bfb4c8dd09b6f2f9c9b5,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
->>>>>>> Stashed changes
     - target: {fileID: 4571374255964167676, guid: cc5f11be54d8bfb4c8dd09b6f2f9c9b5,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -32104,14 +31972,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 4
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
-=======
     - target: {fileID: 5194399219618855535, guid: cc5f11be54d8bfb4c8dd09b6f2f9c9b5,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
->>>>>>> Stashed changes
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -32136,14 +32001,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 4
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
-=======
     - target: {fileID: 213691383043203049, guid: 5c8982283292b02469042c58ddd47a86,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
->>>>>>> Stashed changes
     - target: {fileID: 330843836028570567, guid: 5c8982283292b02469042c58ddd47a86,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -32219,14 +32081,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 4
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
-=======
     - target: {fileID: 7755895269597273849, guid: 5c8982283292b02469042c58ddd47a86,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
->>>>>>> Stashed changes
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -32332,14 +32191,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 4
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
-=======
     - target: {fileID: 73408114109440429, guid: a7eac071fae08424799b1ce21487f755,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
->>>>>>> Stashed changes
     - target: {fileID: 1822946862189872134, guid: a7eac071fae08424799b1ce21487f755,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -32410,14 +32266,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 4
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
-=======
     - target: {fileID: 4060181096331312570, guid: a7eac071fae08424799b1ce21487f755,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
->>>>>>> Stashed changes
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -32592,14 +32445,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 4
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
-=======
     - target: {fileID: 2793203351633019134, guid: 4f9fe4a909dd09b4690005ab970dc710,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
->>>>>>> Stashed changes
     - target: {fileID: 4763648520207015287, guid: 4f9fe4a909dd09b4690005ab970dc710,
         type: 3}
       propertyPath: m_Name
@@ -32610,14 +32460,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 4
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
-=======
     - target: {fileID: 4763648520207015287, guid: 4f9fe4a909dd09b4690005ab970dc710,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
->>>>>>> Stashed changes
     - target: {fileID: 4765282805829209118, guid: 4f9fe4a909dd09b4690005ab970dc710,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -32689,42 +32536,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1731725229}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1731740799
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1731740800}
-  m_Layer: 0
-  m_Name: GameObject (5)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1731740800
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1731740799}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 54.55, y: 5.3471, z: -56.81}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1451896711}
-  - {fileID: 1847222017}
-  - {fileID: 181225932}
-  - {fileID: 1141153540}
-  - {fileID: 512017793}
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1732004696
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -32808,27 +32619,21 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 4
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
-=======
     - target: {fileID: 6744514082038764723, guid: 2bbc94c230ff2244cbbc3003e13add01,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
->>>>>>> Stashed changes
     - target: {fileID: 7045776213430676885, guid: 2bbc94c230ff2244cbbc3003e13add01,
         type: 3}
       propertyPath: m_Layer
       value: 4
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
-=======
     - target: {fileID: 7045776213430676885, guid: 2bbc94c230ff2244cbbc3003e13add01,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
->>>>>>> Stashed changes
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -33047,14 +32852,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 4
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
-=======
     - target: {fileID: 2585656087456375284, guid: cc5f11be54d8bfb4c8dd09b6f2f9c9b5,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
->>>>>>> Stashed changes
     - target: {fileID: 4571374255964167676, guid: cc5f11be54d8bfb4c8dd09b6f2f9c9b5,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -33120,14 +32922,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 4
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
-=======
     - target: {fileID: 5194399219618855535, guid: cc5f11be54d8bfb4c8dd09b6f2f9c9b5,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
->>>>>>> Stashed changes
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -33509,14 +33308,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 4
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
-=======
     - target: {fileID: 2793203351633019134, guid: 4f9fe4a909dd09b4690005ab970dc710,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
->>>>>>> Stashed changes
     - target: {fileID: 4763648520207015287, guid: 4f9fe4a909dd09b4690005ab970dc710,
         type: 3}
       propertyPath: m_Name
@@ -33527,14 +33323,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 4
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
-=======
     - target: {fileID: 4763648520207015287, guid: 4f9fe4a909dd09b4690005ab970dc710,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
->>>>>>> Stashed changes
     - target: {fileID: 4765282805829209118, guid: 4f9fe4a909dd09b4690005ab970dc710,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -33717,27 +33510,21 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 4
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
-=======
     - target: {fileID: 6744514082038764723, guid: 2bbc94c230ff2244cbbc3003e13add01,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
->>>>>>> Stashed changes
     - target: {fileID: 7045776213430676885, guid: 2bbc94c230ff2244cbbc3003e13add01,
         type: 3}
       propertyPath: m_Layer
       value: 4
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
-=======
     - target: {fileID: 7045776213430676885, guid: 2bbc94c230ff2244cbbc3003e13add01,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
->>>>>>> Stashed changes
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -34214,19 +34001,11 @@ Transform:
   m_GameObject: {fileID: 1847222016}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-<<<<<<< Updated upstream
-  m_LocalPosition: {x: -6.5200005, y: 0, z: 8.890003}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1731740800}
-=======
   m_LocalPosition: {x: -6.2700005, y: 0.06773424, z: -13.349998}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 660568509}
->>>>>>> Stashed changes
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1847697971
 PrefabInstance:
@@ -34505,27 +34284,21 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 4
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
-=======
     - target: {fileID: 6744514082038764723, guid: 2bbc94c230ff2244cbbc3003e13add01,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
->>>>>>> Stashed changes
     - target: {fileID: 7045776213430676885, guid: 2bbc94c230ff2244cbbc3003e13add01,
         type: 3}
       propertyPath: m_Layer
       value: 4
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
-=======
     - target: {fileID: 7045776213430676885, guid: 2bbc94c230ff2244cbbc3003e13add01,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
->>>>>>> Stashed changes
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -34555,14 +34328,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 4
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
-=======
     - target: {fileID: 2585656087456375284, guid: cc5f11be54d8bfb4c8dd09b6f2f9c9b5,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
->>>>>>> Stashed changes
     - target: {fileID: 4571374255964167676, guid: cc5f11be54d8bfb4c8dd09b6f2f9c9b5,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -34628,14 +34398,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 4
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
-=======
     - target: {fileID: 5194399219618855535, guid: cc5f11be54d8bfb4c8dd09b6f2f9c9b5,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
->>>>>>> Stashed changes
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -34660,14 +34427,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 4
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
-=======
     - target: {fileID: 518207216674444728, guid: 07b3982bc8fd01545b7aa68b96991658,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
->>>>>>> Stashed changes
     - target: {fileID: 7448196695512279564, guid: 07b3982bc8fd01545b7aa68b96991658,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -34738,14 +34502,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 4
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
-=======
     - target: {fileID: 8363645452989286705, guid: 07b3982bc8fd01545b7aa68b96991658,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
->>>>>>> Stashed changes
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -34770,14 +34531,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 4
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
-=======
     - target: {fileID: 518207216674444728, guid: 07b3982bc8fd01545b7aa68b96991658,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
->>>>>>> Stashed changes
     - target: {fileID: 7448196695512279564, guid: 07b3982bc8fd01545b7aa68b96991658,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -34848,14 +34606,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 4
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
-=======
     - target: {fileID: 8363645452989286705, guid: 07b3982bc8fd01545b7aa68b96991658,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
->>>>>>> Stashed changes
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -34880,14 +34635,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 4
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
-=======
     - target: {fileID: 2793203351633019134, guid: 4f9fe4a909dd09b4690005ab970dc710,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
->>>>>>> Stashed changes
     - target: {fileID: 4763648520207015287, guid: 4f9fe4a909dd09b4690005ab970dc710,
         type: 3}
       propertyPath: m_Name
@@ -34898,14 +34650,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 4
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
-=======
     - target: {fileID: 4763648520207015287, guid: 4f9fe4a909dd09b4690005ab970dc710,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
->>>>>>> Stashed changes
     - target: {fileID: 4765282805829209118, guid: 4f9fe4a909dd09b4690005ab970dc710,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -35429,14 +35178,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 4
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
-=======
     - target: {fileID: 213691383043203049, guid: 5c8982283292b02469042c58ddd47a86,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
->>>>>>> Stashed changes
     - target: {fileID: 330843836028570567, guid: 5c8982283292b02469042c58ddd47a86,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -35507,14 +35253,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 4
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
-=======
     - target: {fileID: 7755895269597273849, guid: 5c8982283292b02469042c58ddd47a86,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
->>>>>>> Stashed changes
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -35544,14 +35287,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 4
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
-=======
     - target: {fileID: 2585656087456375284, guid: cc5f11be54d8bfb4c8dd09b6f2f9c9b5,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
->>>>>>> Stashed changes
     - target: {fileID: 3681332968637673840, guid: cc5f11be54d8bfb4c8dd09b6f2f9c9b5,
         type: 3}
       propertyPath: m_Enabled
@@ -35622,14 +35362,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 4
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
-=======
     - target: {fileID: 5194399219618855535, guid: cc5f11be54d8bfb4c8dd09b6f2f9c9b5,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
->>>>>>> Stashed changes
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -35884,14 +35621,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 4
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
-=======
     - target: {fileID: 2793203351633019134, guid: 4f9fe4a909dd09b4690005ab970dc710,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
->>>>>>> Stashed changes
     - target: {fileID: 4763648520207015287, guid: 4f9fe4a909dd09b4690005ab970dc710,
         type: 3}
       propertyPath: m_Name
@@ -35902,14 +35636,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 4
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
-=======
     - target: {fileID: 4763648520207015287, guid: 4f9fe4a909dd09b4690005ab970dc710,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
->>>>>>> Stashed changes
     - target: {fileID: 4765282805829209118, guid: 4f9fe4a909dd09b4690005ab970dc710,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -35981,8 +35712,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1912081028}
   m_PrefabAsset: {fileID: 0}
-<<<<<<< Updated upstream
-=======
 --- !u!1 &1913070005
 GameObject:
   m_ObjectHideFlags: 0
@@ -36066,7 +35795,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1913070005}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
->>>>>>> Stashed changes
 --- !u!1001 &1924855901
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -36085,14 +35813,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 4
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
-=======
     - target: {fileID: 2585656087456375284, guid: cc5f11be54d8bfb4c8dd09b6f2f9c9b5,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
->>>>>>> Stashed changes
     - target: {fileID: 4571374255964167676, guid: cc5f11be54d8bfb4c8dd09b6f2f9c9b5,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -36158,14 +35883,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 4
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
-=======
     - target: {fileID: 5194399219618855535, guid: cc5f11be54d8bfb4c8dd09b6f2f9c9b5,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
->>>>>>> Stashed changes
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -36406,14 +36128,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 4
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
-=======
     - target: {fileID: 2585656087456375284, guid: cc5f11be54d8bfb4c8dd09b6f2f9c9b5,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
->>>>>>> Stashed changes
     - target: {fileID: 3681332968637673840, guid: cc5f11be54d8bfb4c8dd09b6f2f9c9b5,
         type: 3}
       propertyPath: m_Enabled
@@ -36484,14 +36203,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 4
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
-=======
     - target: {fileID: 5194399219618855535, guid: cc5f11be54d8bfb4c8dd09b6f2f9c9b5,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
->>>>>>> Stashed changes
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -36516,14 +36232,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 4
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
-=======
     - target: {fileID: 518207216674444728, guid: 07b3982bc8fd01545b7aa68b96991658,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
->>>>>>> Stashed changes
     - target: {fileID: 7448196695512279564, guid: 07b3982bc8fd01545b7aa68b96991658,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -36594,14 +36307,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 4
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
-=======
     - target: {fileID: 8363645452989286705, guid: 07b3982bc8fd01545b7aa68b96991658,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
->>>>>>> Stashed changes
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -36977,14 +36687,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 4
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
-=======
     - target: {fileID: 2793203351633019134, guid: 4f9fe4a909dd09b4690005ab970dc710,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
->>>>>>> Stashed changes
     - target: {fileID: 3456538107125695749, guid: 4f9fe4a909dd09b4690005ab970dc710,
         type: 3}
       propertyPath: m_Enabled
@@ -37000,14 +36707,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 4
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
-=======
     - target: {fileID: 4763648520207015287, guid: 4f9fe4a909dd09b4690005ab970dc710,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
->>>>>>> Stashed changes
     - target: {fileID: 4765282805829209118, guid: 4f9fe4a909dd09b4690005ab970dc710,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -37472,14 +37176,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 4
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
-=======
     - target: {fileID: 2585656087456375284, guid: cc5f11be54d8bfb4c8dd09b6f2f9c9b5,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
->>>>>>> Stashed changes
     - target: {fileID: 4571374255964167676, guid: cc5f11be54d8bfb4c8dd09b6f2f9c9b5,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -37545,14 +37246,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 4
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
-=======
     - target: {fileID: 5194399219618855535, guid: cc5f11be54d8bfb4c8dd09b6f2f9c9b5,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
->>>>>>> Stashed changes
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -37818,14 +37516,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 4
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
-=======
     - target: {fileID: 73408114109440429, guid: a7eac071fae08424799b1ce21487f755,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
->>>>>>> Stashed changes
     - target: {fileID: 1822946862189872134, guid: a7eac071fae08424799b1ce21487f755,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -37896,14 +37591,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 4
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
-=======
     - target: {fileID: 4060181096331312570, guid: a7eac071fae08424799b1ce21487f755,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
->>>>>>> Stashed changes
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -37993,27 +37685,21 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 4
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
-=======
     - target: {fileID: 6744514082038764723, guid: 2bbc94c230ff2244cbbc3003e13add01,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
->>>>>>> Stashed changes
     - target: {fileID: 7045776213430676885, guid: 2bbc94c230ff2244cbbc3003e13add01,
         type: 3}
       propertyPath: m_Layer
       value: 4
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
-=======
     - target: {fileID: 7045776213430676885, guid: 2bbc94c230ff2244cbbc3003e13add01,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
->>>>>>> Stashed changes
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -38043,14 +37729,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 4
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
-=======
     - target: {fileID: 2585656087456375284, guid: cc5f11be54d8bfb4c8dd09b6f2f9c9b5,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
->>>>>>> Stashed changes
     - target: {fileID: 4571374255964167676, guid: cc5f11be54d8bfb4c8dd09b6f2f9c9b5,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -38116,14 +37799,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 4
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
-=======
     - target: {fileID: 5194399219618855535, guid: cc5f11be54d8bfb4c8dd09b6f2f9c9b5,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
->>>>>>> Stashed changes
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -38253,14 +37933,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 4
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
-=======
     - target: {fileID: 2793203351633019134, guid: 4f9fe4a909dd09b4690005ab970dc710,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
->>>>>>> Stashed changes
     - target: {fileID: 4763648520207015287, guid: 4f9fe4a909dd09b4690005ab970dc710,
         type: 3}
       propertyPath: m_Name
@@ -38271,14 +37948,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 4
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
-=======
     - target: {fileID: 4763648520207015287, guid: 4f9fe4a909dd09b4690005ab970dc710,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
->>>>>>> Stashed changes
     - target: {fileID: 4765282805829209118, guid: 4f9fe4a909dd09b4690005ab970dc710,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -39231,14 +38905,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 4
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
-=======
     - target: {fileID: 73408114109440429, guid: a7eac071fae08424799b1ce21487f755,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
->>>>>>> Stashed changes
     - target: {fileID: 1822946862189872134, guid: a7eac071fae08424799b1ce21487f755,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -39309,14 +38980,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 4
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
-=======
     - target: {fileID: 4060181096331312570, guid: a7eac071fae08424799b1ce21487f755,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
->>>>>>> Stashed changes
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -41102,16 +40770,13 @@ SceneRoots:
   - {fileID: 1391617100}
   - {fileID: 1968161008}
   - {fileID: 1188287992}
+  - {fileID: 854837105}
+  - {fileID: 563293644}
+  - {fileID: 732280694}
+  - {fileID: 689264271}
   - {fileID: 19134078}
-<<<<<<< Updated upstream
-  - {fileID: 1692685829}
-  - {fileID: 648396863}
-  - {fileID: 1124572904}
-  - {fileID: 1731740800}
-=======
   - {fileID: 960982490}
   - {fileID: 1845443134}
   - {fileID: 168213433}
   - {fileID: 738323446}
   - {fileID: 503256257}
->>>>>>> Stashed changes
