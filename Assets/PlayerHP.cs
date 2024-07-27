@@ -18,4 +18,9 @@ public class PlayerHP : MonoBehaviour, IDamagable
         }
             
     }
+
+    public void Heal(float d)
+    {
+        HP += d;
+    }
 }
