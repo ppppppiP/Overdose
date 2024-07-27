@@ -25,6 +25,7 @@ public class Shotgun : MonoBehaviour
     [SerializeField] GameObject ShootingVFX;
     [SerializeField] GameObject Tracer;
     [SerializeField] Transform TracerOutPosition;
+    [SerializeField] Animator anim;
 
     void Start()
     {
@@ -76,6 +77,7 @@ public class Shotgun : MonoBehaviour
     void Shoot()
     {
         currentAmmo--;
+        anim.CrossFade("Fire", 0f);
 
         // Воспроизведение эффекта вспышки выстрела
         muzzleFlash.Play();
