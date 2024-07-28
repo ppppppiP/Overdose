@@ -23,8 +23,12 @@ public class Shotgun : MonoBehaviour
     private bool isReloading = false; // Флаг перезарядки
 
     [SerializeField] GameObject ShootingVFX;
+    [SerializeField] GameObject ShootingSmokeVFX;
+    [SerializeField] GameObject Bullet;
     [SerializeField] GameObject Tracer;
     [SerializeField] Transform TracerOutPosition;
+    [SerializeField] Transform BulletOutPosition;
+    [SerializeField] Transform SmokeOutPosition;
     [SerializeField] Animator anim;
     [SerializeField] WeaponRecoil recoil;
     void Start()
@@ -79,6 +83,8 @@ public class Shotgun : MonoBehaviour
     {
         currentAmmo--;
         anim.CrossFade("Fire", 0f);
+        Instantiate(Bullet, BulletOutPosition.position, BulletOutPosition.rotation);
+        Instantiate(ShootingSmokeVFX, SmokeOutPosition.position, SmokeOutPosition.rotation);
 
         // Воспроизведение эффекта вспышки выстрела
         muzzleFlash.Play();

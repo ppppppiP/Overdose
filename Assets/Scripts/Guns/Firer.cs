@@ -3,6 +3,8 @@
 public class Firer : MonoBehaviour
 {
     [SerializeField] Animator anim;
+    [SerializeField] GameObject Sound;
+    [SerializeField] Transform Gun;
 
     bool _switch;
 
@@ -11,16 +13,19 @@ public class Firer : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Mouse1))
         {
+
             if (!_switch)
             {
                 _switch = true;
                 anim.CrossFade("Light", 0f);
+                Instantiate(Sound, Gun.position, Gun.rotation);
 
             }
             else if (_switch)
             {
                 _switch = false;
                 anim.CrossFade("NoLight", 0.2f);
+                Instantiate(Sound, Gun.position, Gun.rotation);
             }
         }
 
