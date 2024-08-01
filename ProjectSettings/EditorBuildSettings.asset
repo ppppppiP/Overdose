@@ -8,7 +8,10 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/OutdoorsScene.unity
     guid: 8124e5870f4fd4c779e7a5f994e84ad1
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/DsTestScene/Rofls.unity
     guid: 1914386249d066149a0421ba8717b641
+  - enabled: 1
+    path: Assets/Scenes/Chips Super Lvl/ccc.unity
+    guid: b81f0844210345b47b63ca5204d2fd4a
   m_configObjects: {}

@@ -1,13 +1,12 @@
 using BlackBoardSystem;
-using Controller;
+
 using DG.Tweening;
-using System;
+
 using System.Collections;
 using System.Collections.Generic;
-using System.Diagnostics;
+
 using System.Threading.Tasks;
-using Unity.VisualScripting;
-using UnityEditor.IMGUI.Controls;
+
 using UnityEngine;
 using UnityEngine.AI;
 using UnityServiceLocator;
@@ -37,6 +36,8 @@ public class E_Kaban : MonoBehaviour, IExpert
     [SerializeField] GameObject SpawnVFX;
     public float arcRadius = 5f; // Радиус дуги
     public float arcAngle = 45f; // Угол дуги
+
+    [SerializeField] Animator _anim;
 
     int EnemyID;
 
@@ -73,6 +74,7 @@ public class E_Kaban : MonoBehaviour, IExpert
         Sequence detectAndMoveSequence = new Sequence("Detect and Move Sequence", 100);
         detectAndMoveSequence.AddChild(new Leaf("Is player detected?", new Condition(() => blackboard.TryGetValue(isPlayerDetectedKey, out bool isDetected) && isDetected)));
         detectAndMoveSequence.AddChild(new Leaf("Move to player", new MoveToTarget(transform, agent, playerTarget.transform, minAttackDistance)));
+        detectAndMoveSequence.AddChild(new Leaf("Set no locomotion anim", new ActionStrategy(() => _anim.SetBool("GoForward", true))));
 
         Sequence attackSequence = new Sequence("Attack Sequence", 110);
         attackSequence.AddChild(new Leaf("Is within attack range", new Condition(() => blackboard.TryGetValue(isWithinAttackRangeKey, out bool withinRange) && withinRange)));
@@ -129,7 +131,7 @@ public class E_Kaban : MonoBehaviour, IExpert
                 Vector3 spreadVector = UnityEngine.Random.insideUnitSphere * spread;
              
 
-                // Исправлено направление для Raycast
+                
                 Vector3 direction = (playerTarget.transform.position - gunPosition.position).normalized + spreadVector;
                 if (Physics.Raycast(gunPosition.position, direction, out RaycastHit hit))
                 {
@@ -142,7 +144,7 @@ public class E_Kaban : MonoBehaviour, IExpert
                     CameraShake.Instance.ShakeCamera();
                 }
                
-                    // логика попадания по врагам будет тут
+                    
                     StartCoroutine(TracerRenderer(gunPosition.position, hit.point));
                 }
             }
@@ -151,20 +153,23 @@ public class E_Kaban : MonoBehaviour, IExpert
             reloadFlag = false;
                Reload();
             }
+        _anim.SetBool("GoForward", false);
+        _anim.SetFloat("XDir", agent.velocity.normalized.x);
+        _anim.SetFloat("YDir", agent.velocity.normalized.z);
         Patrol();
     }
     private void Patrol()
     {
-        // Проверяем, достиг ли агент целевой точки
+      
         if (!isStopped)
         {
             StartCoroutine(StopRoutine());
 
             Vector3 start = transform.position;
             Vector3 end = GetRandomPointInArc();
-            float radius = 5f; // Параметры дуги
+            float radius = 5f; 
             float angle = 45f;
-            float duration = 5f; // Длительность движения
+            float duration = 5f;
 
             StartCoroutine(MoveAlongArc(start, end, radius, angle, duration));
         }
@@ -182,22 +187,22 @@ public class E_Kaban : MonoBehaviour, IExpert
             timeElapsed += Time.deltaTime;
             float t = timeElapsed / duration;
 
-            // Вычисляем текущую точку на дуге
+            
             int segment = Mathf.FloorToInt(t * (arcPoints.Count - 1));
             float segmentT = (t * (arcPoints.Count - 1)) - segment;
 
             Vector3 currentPoint = Vector3.Lerp(arcPoints[segment], arcPoints[segment + 1], segmentT);
 
-            // Обновляем путь агента
+            
             agent.SetDestination(currentPoint);
 
-            // Вывод отладочной информации
+            
             UnityEngine.Debug.Log($"Agent Position: {agent.transform.position}, Target Point: {currentPoint}");
 
             yield return null;
         }
 
-        // Обеспечиваем, что агент достиг конечной точки
+       
         agent.SetDestination(end);
     }
     private List<Vector3> GenerateRandomArcPoints(Vector3 center, float radius, float angle, int numPoints)
@@ -209,7 +214,7 @@ public class E_Kaban : MonoBehaviour, IExpert
             float t = (float)i / (numPoints - 1);
             float currentAngle = Mathf.Lerp(-angle / 2f, angle / 2f, t);
 
-            // Выбираем случайную точку в радиусе дуги
+         
             Vector2 randomDirection = UnityEngine.Random.insideUnitCircle * radius;
             Vector3 point = center + Quaternion.Euler(0, currentAngle, 0) * new Vector3(randomDirection.x, 0, randomDirection.y);
 
@@ -227,33 +232,33 @@ public class E_Kaban : MonoBehaviour, IExpert
         isStopped = false;
     }
 
-    // Метод для получения случайной точки в заданном радиусе
+    
     private Vector3 GetRandomPointInArc()
     {
-        // Выбираем случайное направление на дуге
+        
         Vector2 randomDirection = UnityEngine.Random.insideUnitCircle * arcRadius;
         Vector3 randomPoint = new Vector3(randomDirection.x, 0, randomDirection.y);
 
-        // Поворачиваем случайную точку на дугу
+        
         float angle = UnityEngine.Random.Range(-arcAngle / 2f, arcAngle / 2f);
         Quaternion rotation = Quaternion.Euler(0, angle, 0);
         randomPoint = rotation * randomPoint;
 
-        // Применяем радиус патруля
+        
         randomPoint += (Vector3)UnityEngine.Random.insideUnitCircle * patrolRadius;
-        randomPoint.y = transform.position.y; // сохраняем высоту текущей позиции
+        randomPoint.y = transform.position.y; 
 
-        // Проверяем точку на NavMesh
+        
         NavMeshHit hit;
         if (NavMesh.SamplePosition(randomPoint, out hit, patrolRadius, NavMesh.AllAreas))
         {
             return hit.position;
         }
-        return transform.position; // Если не удалось найти точку на NavMesh, остаёмся на месте
+        return transform.position;
     }
     public IEnumerator TracerRenderer(Vector3 start, Vector3 target)
     {
-        float duration = 0.1f; // Длительность полета трейсера
+        float duration = 0.1f; 
         float elapsedTime = 0f;
 
         GameObject tracer = Instantiate(Tracer, gunPosition.position, Quaternion.LookRotation(target - start));
@@ -261,18 +266,18 @@ public class E_Kaban : MonoBehaviour, IExpert
         while (elapsedTime < duration)
         {
             elapsedTime += Time.deltaTime;
-            float t = elapsedTime / duration; // Нормализованное время
+            float t = elapsedTime / duration; 
 
-            // Используем Lerp для плавного перемещения
+           
             tracer.transform.position = Vector3.Lerp(start, target, t);
 
-            yield return null; // Ждем следующего кадра
+            yield return null; 
         }
 
-        // Убедимся, что трейсер достиг конечной точки
+       
         tracer.transform.position = target;
 
-        // Опционально: уничтожаем трейсер после небольшой задержки
+        
         yield return new WaitForSeconds(1f);
         Destroy(tracer);
     }
