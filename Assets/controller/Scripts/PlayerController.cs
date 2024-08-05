@@ -52,7 +52,7 @@ namespace Controller
         [HideInInspector] public float Lookvertical;
         [HideInInspector] public float Lookhorizontal;
         float RunningValue;
-        float installGravity; /// НЕ УДАЛЯТЬ А ТО БАН!
+        //float installGravity { get; set; } /// НЕ УДАЛЯТЬ А ТО БАН!
         bool WallDistance;
         [HideInInspector] public float WalkingValue;
         void Start()
@@ -66,7 +66,7 @@ namespace Controller
             InstallCameraMovement = Camera.localPosition;
             InstallFOV = cam.fieldOfView;
             RunningValue = RuningSpeed;
-            installGravity = gravity;
+           // installGravity = gravity;
             WalkingValue = walkingSpeed;
         }
 
@@ -80,7 +80,7 @@ namespace Controller
                 moveDirection.y = jumpSpeed;
             }
 
-            if (!characterController.isGrounded)
+            if (!characterController.isGrounded && canMove)
             {
                 moveDirection.y -= gravity * Time.deltaTime;
             }
@@ -105,7 +105,8 @@ namespace Controller
             {
                 moveDirection.y = movementDirectionY;
             }
-            characterController.Move(moveDirection * Time.deltaTime);
+           
+                characterController.Move(moveDirection * Time.deltaTime);
             Moving = horizontal < 0 || vertical < 0 || horizontal > 0 || vertical > 0 ? true : false;
 
             if (Cursor.lockState == CursorLockMode.Locked && canMove)
@@ -147,6 +148,35 @@ namespace Controller
                 WallDistance = Physics.Raycast(GetComponentInChildren<Camera>().transform.position, transform.TransformDirection(Vector3.forward), out ObjectCheck, HideDistance, LayerMaskInt);
                 Items.ani.SetBool("Hide", WallDistance);
                 Items.DefiniteHide = WallDistance;
+            }
+
+            if (!canMove)
+            {
+                if(Input.GetAxis("Vertical") > 0)
+                    characterController.Move(Vector3.up * walkingSpeed/5f);
+                if (Input.GetAxis("Vertical") < 0)
+                {
+                    characterController.Move(Vector3.down * walkingSpeed);
+                    if (Physics.Raycast(transform.position, Vector3.down, 10))
+                    {
+                        canMove = true;
+                    }
+                }
+  
+            }
+        }
+
+        private void OnTriggerEnter(Collider other)
+        {
+            if (other.GetComponent<Ladder>())
+            {
+                canMove = false;
+            }
+        }private void OnTriggerExit(Collider other)
+        {
+            if (other.GetComponent<Ladder>())
+            {
+                canMove = true;
             }
         }
     }
