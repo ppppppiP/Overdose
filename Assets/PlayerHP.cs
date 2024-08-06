@@ -36,7 +36,12 @@ public class PlayerHP : MonoBehaviour, IDamagable
 
     public void Heal(float d)
     {
-        HP += d;
+        if(HP + d > MaxHP)
+            HP= MaxHP;
+        else
+            HP += d;
+
+
         UpdateVignette();
     }
 
