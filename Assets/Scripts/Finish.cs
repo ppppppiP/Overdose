@@ -29,7 +29,7 @@ public class Finish : MonoBehaviour
         }
         else
         {
-            FinishMenu_Good.SetActive(false);
+            FinishMenu_Good.SetActive(true);
         }
     }
 

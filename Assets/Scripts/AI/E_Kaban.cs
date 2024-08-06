@@ -13,7 +13,8 @@ using UnityServiceLocator;
 
 public class E_Kaban : MonoBehaviour, IExpert
 {
-    [SerializeField] List<Transform> waypoints = new List<Transform>();
+    public WaiPointHolder holder;
+     List<Transform> waypoints = new List<Transform>();
     [SerializeField] GameObject playerTarget;
     [SerializeField] float minAttackDistance = 10f;
     [SerializeField] float detectionDistance = 20f;
@@ -47,6 +48,7 @@ public class E_Kaban : MonoBehaviour, IExpert
 
     void Awake()
     {
+        waypoints = holder.Points;
         EnemyID = GetInstanceID();
         agent = GetComponent<NavMeshAgent>();
     }
