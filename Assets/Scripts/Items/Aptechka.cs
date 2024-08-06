@@ -12,7 +12,7 @@ public class Aptechka : MonoBehaviour
         {
             Instantiate(Sound, transform.position, Quaternion.identity);
             gameObject.SetActive(false);
-            staticAnimatorHelth.instance.anim.CrossFade("Apt", 0f);
+        
             pla.Heal(HealNumber);
         }
     }
