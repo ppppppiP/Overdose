@@ -19,6 +19,7 @@ namespace Controller
         [Space(20)]
         [Header("Advance")]
         [SerializeField] float RunningFOV = 65.0f;
+        [SerializeField] float LadderSpeed = 3f;
         [SerializeField] float SpeedToFOV = 4.0f;
         [SerializeField] float gravity = 20.0f;
         [SerializeField] float timeToRunning = 2.0f;
@@ -153,10 +154,10 @@ namespace Controller
             if (!canMove)
             {
                 if(Input.GetAxis("Vertical") > 0)
-                    characterController.Move(Vector3.up * walkingSpeed/5f);
+                    characterController.Move(Vector3.up * LadderSpeed);
                 if (Input.GetAxis("Vertical") < 0)
                 {
-                    characterController.Move(Vector3.down * walkingSpeed);
+                    characterController.Move(Vector3.down * LadderSpeed);
                     if (Physics.Raycast(transform.position, Vector3.down, 10))
                     {
                         canMove = true;
