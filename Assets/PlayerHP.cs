@@ -42,8 +42,10 @@ public class PlayerHP : MonoBehaviour, IDamagable
             HP += d;
 
 
-        UpdateVignette();
+        UpdateVignette1();
     }
+
+
 
     void UpdateVignette()
     {
@@ -57,6 +59,13 @@ public class PlayerHP : MonoBehaviour, IDamagable
 
             // ќбновл€ем значение интенсивности виньетки
             vignette.intensity.value = vignetteIntensity;
+        }
+    }void UpdateVignette1()
+    {
+        if (vignette != null)
+        {
+            
+            vignette.intensity.value = 0;
         }
     }
 }
