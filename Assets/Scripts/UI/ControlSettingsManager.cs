@@ -24,7 +24,7 @@ public class ControlSettingsManager : MonoBehaviour
 
     private const string Sensitivity = "Sensitivity";
 
-    void Start()
+    void Awake()
     {
         // Загрузка сохраненных настроек
         keyBindings["Shoot"] = (KeyCode)PlayerPrefs.GetInt("ShootKey", (int)KeyCode.Space);

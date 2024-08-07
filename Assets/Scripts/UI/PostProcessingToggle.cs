@@ -19,7 +19,7 @@ public class PostProcessingToggle : MonoBehaviour
     Exposure exposure;
     LiftGammaGain liftGammaGain;
 
-    void Start()
+    void Awake()
     {
         // Инициализация эффектов постобработки
         if (volumeProfile != null)
