@@ -139,12 +139,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dcbf51a1b19f55d4b95e19fdc22a8ce2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waypoints:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  holder: {fileID: 0}
   playerTarget: {fileID: 0}
   minAttackDistance: 57.77
   detectionDistance: 16.91
@@ -480,8 +475,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: -876546973899608171, guid: 0a550869ab36c2f4fae4ced10b2b60f7,
-        type: 3}
+      objectReference: {fileID: 2100000, guid: 543e605998d787140ac8adeb0e402546, type: 2}
     - target: {fileID: 919132149155446097, guid: 7cdeff0a4c4102b46a4b5b63e1ea2505,
         type: 3}
       propertyPath: m_Name
@@ -491,8 +485,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: -876546973899608171, guid: 0a550869ab36c2f4fae4ced10b2b60f7,
-        type: 3}
+      objectReference: {fileID: 2100000, guid: 543e605998d787140ac8adeb0e402546, type: 2}
     - target: {fileID: 5866666021909216657, guid: 7cdeff0a4c4102b46a4b5b63e1ea2505,
         type: 3}
       propertyPath: m_Controller
