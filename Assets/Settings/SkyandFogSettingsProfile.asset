@@ -1602,7 +1602,7 @@ MonoBehaviour:
     m_Value: {x: 0.5, y: 0.5}
   intensity:
     m_OverrideState: 1
-    m_Value: 0.6
+    m_Value: 0
   smoothness:
     m_OverrideState: 1
     m_Value: 1
@@ -2131,13 +2131,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da5ab44aadfb1804db5fd470983ac1b8, type: 3}
   m_Name: LiftGammaGain
   m_EditorClassIdentifier: 
-  active: 0
+  active: 1
   lift:
     m_OverrideState: 1
     m_Value: {x: 1, y: 0.98, z: 0.9903333, w: 0}
   gamma:
     m_OverrideState: 1
-    m_Value: {x: 0.84000003, y: 0.9253333, z: 1, w: 0.03790272}
+    m_Value: {x: 1, y: 1, z: 1, w: -0.58087635}
   gain:
     m_OverrideState: 1
     m_Value: {x: 1, y: 1, z: 1, w: 1}
