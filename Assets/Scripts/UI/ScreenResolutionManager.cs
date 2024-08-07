@@ -11,7 +11,7 @@ public class ScreenResolutionManager : MonoBehaviour
 
     private Resolution[] resolutions;
     private List<Resolution> uniqueResolutions = new List<Resolution>();
-
+    
     private const string ResolutionWidthKey = "ResolutionWidth";
     private const string ResolutionHeightKey = "ResolutionHeight";
     private const string FullscreenKey = "Fullscreen";
@@ -20,11 +20,11 @@ public class ScreenResolutionManager : MonoBehaviour
     {
         
         resolutions = Screen.resolutions;
-        RefreshRate rate = Screen.currentResolution.refreshRateRatio;
-        Debug.Log(rate.Equals(resolutions[1].refreshRateRatio));
+       
+       
         HashSet<string> resolutionOptionsSet = new HashSet<string>();
 
-      
+       
         resolutionDropdown.ClearOptions();
         List<string> options = new List<string>();
         int currentResolutionIndex = 0;
@@ -94,6 +94,7 @@ public class ScreenResolutionManager : MonoBehaviour
 
     public void SetFullscreen(bool isFullscreen)
     {
+        isFullscreen = fullscreenToggle.isOn;
         Screen.fullScreen = isFullscreen;
        
         PlayerPrefs.SetInt(FullscreenKey, isFullscreen ? 1 : 0);

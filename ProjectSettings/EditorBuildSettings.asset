@@ -8,4 +8,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/LvL/Menu.unity
     guid: 9eaba2e5f81c989418c829c0fcb5a223
+  - enabled: 1
+    path: Assets/Scenes/LvL/NotRoflsNow 1.unity
+    guid: 45bca00d039f9e343b5696b44b576424
   m_configObjects: {}
