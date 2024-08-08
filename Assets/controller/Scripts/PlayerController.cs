@@ -77,12 +77,13 @@ namespace Controller
 
             // Загрузка настроек управления из PlayerPrefs
             crouchKey = (KeyCode)PlayerPrefs.GetInt("CrouchKey", (int)KeyCode.LeftControl);
-            jumpKey = (KeyCode)PlayerPrefs.GetInt("JumpKey", (int)KeyCode.Space);
+            jumpKey = (KeyCode)PlayerPrefs.GetInt("Jump", (int)KeyCode.Space);
             runKey = (KeyCode)PlayerPrefs.GetInt("RunKey", (int)KeyCode.LeftShift);
             moveForwardKey = (KeyCode)PlayerPrefs.GetInt("MoveForwardKey", (int)KeyCode.W);
             moveBackwardKey = (KeyCode)PlayerPrefs.GetInt("MoveBackwardKey", (int)KeyCode.S);
             moveLeftKey = (KeyCode)PlayerPrefs.GetInt("MoveLeftKey", (int)KeyCode.A);
             moveRightKey = (KeyCode)PlayerPrefs.GetInt("MoveRightKey", (int)KeyCode.D);
+
             lookSpeed = PlayerPrefs.GetFloat("Sensitivity");
         }
 
@@ -90,56 +91,57 @@ namespace Controller
         {
             RaycastHit crouchCheck;
             RaycastHit objectCheck;
-
-            // Проверка на прыжок
-            if (Input.GetKey(jumpKey) && canMove && characterController.isGrounded && !isCrouching)
+            if (canMove)
             {
-                isJumping = true;
-                moveDirection.y = jumpSpeed;
-            }
-
-            // Применение гравитации
-            if (!characterController.isGrounded && canMove)
-            {
-                moveDirection.y -= gravity * Time.deltaTime;
-            }
-            Vector3 forward = transform.TransformDirection(Vector3.forward);
-            Vector3 right = transform.TransformDirection(Vector3.right);
-
-            // Управление движением вперед и назад
-            bool moveForward = Input.GetKey(moveForwardKey);
-            bool moveBackward = Input.GetKey(moveBackwardKey);
-            bool moveLeft = Input.GetKey(moveLeftKey);
-            bool moveRight = Input.GetKey(moveRightKey);
-
-            isRunning = !isCrouching ? canRunning && Input.GetKey(runKey) : false;
-            vertical = (isRunning ? runningValue : walkingValue) * ((moveForward ? 1 : 0) - (moveBackward ? 1 : 0));
-            horizontal = (isRunning ? runningValue : walkingValue) * ((moveRight ? 1 : 0) - (moveLeft ? 1 : 0));
-
-            if (isRunning) runningValue = Mathf.Lerp(runningValue, runningSpeed, timeToRunning * Time.deltaTime);
-            else runningValue = walkingValue;
-
-            float movementDirectionY = moveDirection.y;
-            moveDirection = (forward * vertical) + (right * horizontal);
-
-            // Обработка движения
-            if (Input.GetKey(jumpKey) && canMove && characterController.isGrounded)
-            {
-                if (!isCrouching)
+                // Проверка на прыжок
+                if (Input.GetKey(jumpKey) && canMove && characterController.isGrounded && !isCrouching)
                 {
+                    isJumping = true;
                     moveDirection.y = jumpSpeed;
                 }
-            }
-            else
-            {
-                moveDirection.y = movementDirectionY;
-            }
 
-            characterController.Move(moveDirection * Time.deltaTime);
-            moving = moveForward || moveLeft || moveRight;
+                // Применение гравитации
+                if (!characterController.isGrounded && canMove)
+                {
+                    moveDirection.y -= gravity * Time.deltaTime;
+                }
+                Vector3 forward = transform.TransformDirection(Vector3.forward);
+                Vector3 right = transform.TransformDirection(Vector3.right);
 
+                // Управление движением вперед и назад
+                bool moveForward = Input.GetKey(moveForwardKey);
+                bool moveBackward = Input.GetKey(moveBackwardKey);
+                bool moveLeft = Input.GetKey(moveLeftKey);
+                bool moveRight = Input.GetKey(moveRightKey);
+
+                isRunning = !isCrouching ? canRunning && Input.GetKey(runKey) : false;
+                vertical = (isRunning ? runningValue : walkingValue) * ((moveForward ? 1 : 0) - (moveBackward ? 1 : 0));
+                horizontal = (isRunning ? runningValue : walkingValue) * ((moveRight ? 1 : 0) - (moveLeft ? 1 : 0));
+
+                if (isRunning) runningValue = Mathf.Lerp(runningValue, runningSpeed, timeToRunning * Time.deltaTime);
+                else runningValue = walkingValue;
+
+                float movementDirectionY = moveDirection.y;
+                moveDirection = (forward * vertical) + (right * horizontal);
+
+                // Обработка движения
+                if (Input.GetKey(jumpKey) && canMove && characterController.isGrounded)
+                {
+                    if (!isCrouching)
+                    {
+                        moveDirection.y = jumpSpeed;
+                    }
+                }
+                else
+                {
+                    moveDirection.y = movementDirectionY;
+                }
+
+                characterController.Move(moveDirection * Time.deltaTime);
+                moving = moveForward || moveLeft || moveRight;
+            }
             // Управление взглядом и камерой
-            if (Cursor.lockState == CursorLockMode.Locked && canMove)
+            if (Cursor.lockState == CursorLockMode.Locked)
             {
                 lookVertical = -Input.GetAxis("Mouse Y");
                 lookHorizontal = Input.GetAxis("Mouse X");
@@ -185,11 +187,11 @@ namespace Controller
             // Управление лестницей
             if (!canMove)
             {
-                if (Input.GetAxis("Vertical") > 0)
-                    characterController.Move(Vector3.up * LadderSpeed);
-                if (Input.GetAxis("Vertical") < 0)
+                if (Input.GetKey(moveForwardKey))
+                    characterController.Move(Vector3.up * LadderSpeed * Time.deltaTime);
+                if (Input.GetKey(moveBackwardKey))
                 {
-                    characterController.Move(Vector3.down * LadderSpeed);
+                    characterController.Move(Vector3.down * LadderSpeed * Time.deltaTime);
                     if (Physics.Raycast(transform.position, Vector3.down, 10))
                     {
                         canMove = true;

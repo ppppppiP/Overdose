@@ -17,6 +17,8 @@ public class ControlSettingsManager : MonoBehaviour
     public TextMeshProUGUI crouchButton;
     public TextMeshProUGUI shootButton;
     public TextMeshProUGUI lightButton;
+    public TextMeshProUGUI jumpButton;
+    public TextMeshProUGUI openMenuButton;
 
     private string currentAction; // Текущая настраиваемая клавиша
     private Dictionary<string, KeyCode> keyBindings = new Dictionary<string, KeyCode>();
@@ -27,7 +29,7 @@ public class ControlSettingsManager : MonoBehaviour
     void Awake()
     {
         // Загрузка сохраненных настроек
-        keyBindings["Shoot"] = (KeyCode)PlayerPrefs.GetInt("ShootKey", (int)KeyCode.Space);
+        keyBindings["Shoot"] = (KeyCode)PlayerPrefs.GetInt("ShootKey", (int)KeyCode.Mouse0);
         keyBindings["Flashlight"] = (KeyCode)PlayerPrefs.GetInt("FlashlightKey", (int)KeyCode.F);
         keyBindings["MoveForward"] = (KeyCode)PlayerPrefs.GetInt("MoveForwardKey", (int)KeyCode.W);
         keyBindings["MoveBackward"] = (KeyCode)PlayerPrefs.GetInt("MoveBackwardKey", (int)KeyCode.S);
@@ -36,6 +38,9 @@ public class ControlSettingsManager : MonoBehaviour
         keyBindings["Crouch"] = (KeyCode)PlayerPrefs.GetInt("CrouchKey", (int)KeyCode.LeftControl);
         keyBindings["Run"] = (KeyCode)PlayerPrefs.GetInt("RunKey", (int)KeyCode.LeftShift);
         keyBindings["Interact"] = (KeyCode)PlayerPrefs.GetInt("InteractKey", (int)KeyCode.E);
+        keyBindings["OpenMenu"] = (KeyCode)PlayerPrefs.GetInt("OpenMenu", (int)KeyCode.Escape);
+        keyBindings["Jump"] = (KeyCode)PlayerPrefs.GetInt("Jump", (int)KeyCode.Space);
+        
         sensitivitySlider.value = PlayerPrefs.GetFloat(Sensitivity, 1.0f);
 
         // Инициализация отображения текста для каждой кнопки
@@ -46,6 +51,8 @@ public class ControlSettingsManager : MonoBehaviour
         actionTexts["MoveLeft"] = leftButton;
         actionTexts["MoveRight"] = rightButton;
         actionTexts["Crouch"] = crouchButton;
+        actionTexts["OpenMenu"] = openMenuButton;
+        actionTexts["Jump"] = jumpButton;
        
 
         // Установка обработчика события для кнопки
@@ -132,6 +139,14 @@ public class ControlSettingsManager : MonoBehaviour
     public void OnInteractButtonClicked()
     {
         SetKeyForAction("Interact", actionTexts["Interact"]);
+    }
+    public void OnJumpButtonClicked()
+    {
+        SetKeyForAction("Jump", actionTexts["Jump"]);
+    }
+    public void OnOpenMenuButtonClicked()
+    {
+        SetKeyForAction("OpenMenu", actionTexts["OpenMenu"]);
     }
 
     public void SaveSettings()

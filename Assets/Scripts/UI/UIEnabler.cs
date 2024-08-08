@@ -3,10 +3,15 @@
 public class UIEnabler: MonoBehaviour
 {
     [SerializeField] GameObject _UI;
+    KeyCode _key;
 
+    private void Start()
+    {
+        _key = (KeyCode)PlayerPrefs.GetInt("OpenMenu", (int)KeyCode.Escape);
+    }
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if (Input.GetKeyDown(_key))
         {
             if(_UI.activeSelf != !_UI.activeSelf)
             {

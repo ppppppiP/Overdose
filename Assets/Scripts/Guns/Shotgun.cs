@@ -31,9 +31,12 @@ public class Shotgun : MonoBehaviour
     [SerializeField] Transform SmokeOutPosition;
     [SerializeField] Animator anim;
     [SerializeField] WeaponRecoil recoil;
+
+    KeyCode _shootKey;
     void Start()
     {
         currentAmmo = magazineSize; // Инициализация патронов в магазине
+        _shootKey = (KeyCode)PlayerPrefs.GetInt("ShootKey");
     }
 
     void Update()
@@ -47,7 +50,7 @@ public class Shotgun : MonoBehaviour
             return;
         }
 
-        if (Input.GetKeyDown(KeyCode.Mouse0) && Time.time >= nextTimeToFire && currentAmmo > 0)
+        if (Input.GetKeyDown(_shootKey) && Time.time >= nextTimeToFire && currentAmmo > 0)
         {
             nextTimeToFire = Time.time + 1f / fireRate;
             Shoot();
