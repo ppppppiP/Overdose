@@ -112,7 +112,10 @@ public class Shotgun : MonoBehaviour
                 {
                     damage.GetDamage(this.damage);
                 }
-
+                if(hit.transform.TryGetComponent<IFirable>(out IFirable interact))
+                {
+                    interact.Interact(hit);
+                }
 
                 // Воспроизведение эффекта попадания
                 //GameObject impactGO = Instantiate(impactEffect, hit.point, Quaternion.LookRotation(hit.normal));
@@ -147,4 +150,9 @@ public class Shotgun : MonoBehaviour
 
         Destroy(tracer);
     }
+}
+
+public interface IFirable
+{
+    public void Interact(RaycastHit hit);
 }

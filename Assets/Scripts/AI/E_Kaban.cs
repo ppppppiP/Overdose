@@ -46,6 +46,8 @@ public class E_Kaban : MonoBehaviour, IExpert
     private Vector3 targetPoint;
    public float patrolRadius;
 
+    public bool CanMove = true;
+
     void Awake()
     {
         waypoints = holder.Points;
@@ -93,22 +95,24 @@ public class E_Kaban : MonoBehaviour, IExpert
 
     void Update()
     {
-        tree.Process();
+        if (CanMove)
+        {
+            tree.Process();
 
-       
-        float distanceToPlayer = Vector3.Distance(transform.position, playerTarget.transform.position);
 
-        if (Physics.Linecast(playerTarget.transform.position, transform.position, Layer))
-            blackboard.SetValue(isPlayerDetectedKey, false);
-        else 
-            blackboard.SetValue(isPlayerDetectedKey, distanceToPlayer <= detectionDistance);
-           
+            float distanceToPlayer = Vector3.Distance(transform.position, playerTarget.transform.position);
 
-        if (Physics.Linecast(playerTarget.transform.position, transform.position, Layer))
-            blackboard.SetValue(isWithinAttackRangeKey, false);
-        else 
-            blackboard.SetValue(isWithinAttackRangeKey, distanceToPlayer <= minAttackDistance);
-            
+            if (Physics.Linecast(playerTarget.transform.position, transform.position, Layer))
+                blackboard.SetValue(isPlayerDetectedKey, false);
+            else
+                blackboard.SetValue(isPlayerDetectedKey, distanceToPlayer <= detectionDistance);
+
+
+            if (Physics.Linecast(playerTarget.transform.position, transform.position, Layer))
+                blackboard.SetValue(isWithinAttackRangeKey, false);
+            else
+                blackboard.SetValue(isWithinAttackRangeKey, distanceToPlayer <= minAttackDistance);
+        }
 
 
     }
