@@ -74,8 +74,8 @@ MonoBehaviour:
           inWeight: 0
           outWeight: 0
         - serializedVersion: 3
-          time: 0.25182483
-          value: 0.5285171
+          time: 0.2919708
+          value: 0.36121672
           inSlope: 1.9930576
           outSlope: 1.9930576
           tangentMode: 0
@@ -83,8 +83,8 @@ MonoBehaviour:
           inWeight: 0
           outWeight: 0
         - serializedVersion: 3
-          time: 0.80656934
-          value: 0.8631179
+          time: 0.52372265
+          value: 0.8403042
           inSlope: 0.41604578
           outSlope: 0.41604578
           tangentMode: 0
@@ -435,7 +435,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f086a068d4c5889438831b3ae9afc11c, type: 3}
   m_Name: Tonemapping
   m_EditorClassIdentifier: 
-  active: 0
+  active: 1
   mode:
     m_OverrideState: 1
     m_Value: 2
@@ -530,13 +530,13 @@ MonoBehaviour:
   active: 1
   shadows:
     m_OverrideState: 1
-    m_Value: {x: 1, y: 1, z: 1, w: -0.43588117}
+    m_Value: {x: 1, y: 1, z: 1, w: -0.9538851}
   midtones:
-    m_OverrideState: 1
-    m_Value: {x: 0.93, y: 1, z: 0.93116665, w: 0.12002528}
+    m_OverrideState: 0
+    m_Value: {x: 1, y: 0.949, z: 0.83, w: 0.14529376}
   highlights:
-    m_OverrideState: 1
-    m_Value: {x: 1, y: 0.9176667, z: 0.81, w: 0.24005051}
+    m_OverrideState: 0
+    m_Value: {x: 1, y: 1, z: 0.69, w: 0.24005051}
   shadowsStart:
     m_OverrideState: 0
     m_Value: 0
@@ -561,7 +561,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 953beb541740ddc499d005ee80c9ff29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  active: 0
+  active: 1
   quality:
     m_OverrideState: 1
     m_Value: 0
@@ -649,7 +649,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 384c4d03a551c44448145f4093304119, type: 3}
   m_Name: ScreenSpaceReflection
   m_EditorClassIdentifier: 
-  active: 0
+  active: 1
   quality:
     m_OverrideState: 1
     m_Value: 3
@@ -1014,13 +1014,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aaa3b8214f75b354e9ba2caadd022259, type: 3}
   m_Name: DepthOfField
   m_EditorClassIdentifier: 
-  active: 1
+  active: 0
   quality:
     m_OverrideState: 1
     m_Value: 3
   focusMode:
     m_OverrideState: 1
-    m_Value: 2
+    m_Value: 0
   focusDistance:
     m_OverrideState: 0
     m_Value: 10
@@ -1125,7 +1125,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9008a067f4d626c4d8bc4bc48f04bb89, type: 3}
   m_Name: ScreenSpaceAmbientOcclusion
   m_EditorClassIdentifier: 
-  active: 0
+  active: 1
   quality:
     m_OverrideState: 1
     m_Value: 3
@@ -1602,7 +1602,7 @@ MonoBehaviour:
     m_Value: {x: 0.5, y: 0.5}
   intensity:
     m_OverrideState: 1
-    m_Value: 0.26
+    m_Value: 0.39999998
   smoothness:
     m_OverrideState: 1
     m_Value: 1
@@ -1991,8 +1991,8 @@ MonoBehaviour:
     m_OverrideState: 0
     m_Value: 1
   fixedExposure:
-    m_OverrideState: 0
-    m_Value: 0
+    m_OverrideState: 1
+    m_Value: 11.820027
   compensation:
     m_OverrideState: 0
     m_Value: -0.06
@@ -2133,11 +2133,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   active: 1
   lift:
-    m_OverrideState: 1
-    m_Value: {x: 1, y: 0.98, z: 0.9903333, w: 0}
+    m_OverrideState: 0
+    m_Value: {x: 0.96999997, y: 1, z: 0.95, w: 0.120025374}
   gamma:
     m_OverrideState: 1
-    m_Value: {x: 2, y: 2, z: 2, w: 0.28780046}
+    m_Value: {x: 1, y: 1, z: 1, w: 0.4023045}
   gain:
     m_OverrideState: 1
-    m_Value: {x: 1, y: 1, z: 1, w: 1}
+    m_Value: {x: 1, y: 0.7833333, z: 0, w: 1}

@@ -11,7 +11,7 @@ public class Firer : MonoBehaviour
     private void Update()
     {
 
-        if (Input.GetKeyDown(KeyCode.Mouse1))
+        if (Input.GetKeyDown(KeyCode.Mouse2))
         {
 
             if (!_switch)
