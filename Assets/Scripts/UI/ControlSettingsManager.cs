@@ -20,7 +20,7 @@ public class ControlSettingsManager : MonoBehaviour
     public TextMeshProUGUI jumpButton;
     public TextMeshProUGUI openMenuButton;
 
-    private string currentAction; // Текущая настраиваемая клавиша
+    private string currentAction; 
     private Dictionary<string, KeyCode> keyBindings = new Dictionary<string, KeyCode>();
     private Dictionary<string, TextMeshProUGUI> actionTexts = new Dictionary<string, TextMeshProUGUI>();
 
@@ -28,7 +28,7 @@ public class ControlSettingsManager : MonoBehaviour
 
     void Awake()
     {
-        // Загрузка сохраненных настроек
+        
         keyBindings["Shoot"] = (KeyCode)PlayerPrefs.GetInt("ShootKey", (int)KeyCode.Mouse0);
         keyBindings["Flashlight"] = (KeyCode)PlayerPrefs.GetInt("FlashlightKey", (int)KeyCode.F);
         keyBindings["MoveForward"] = (KeyCode)PlayerPrefs.GetInt("MoveForwardKey", (int)KeyCode.W);
@@ -43,7 +43,7 @@ public class ControlSettingsManager : MonoBehaviour
         
         sensitivitySlider.value = PlayerPrefs.GetFloat(Sensitivity, 1.0f);
 
-        // Инициализация отображения текста для каждой кнопки
+       
         actionTexts["Shoot"] = shootButton;
         actionTexts["Flashlight"] = lightButton;
         actionTexts["MoveForward"] = fwdButton;
@@ -55,10 +55,9 @@ public class ControlSettingsManager : MonoBehaviour
         actionTexts["Jump"] = jumpButton;
        
 
-        // Установка обработчика события для кнопки
+    
         setKeyButton.onClick.AddListener(SetKey);
 
-        // Обновление текста на кнопках в UI
         UpdateButtonLabels();
     }
 
@@ -76,7 +75,7 @@ public class ControlSettingsManager : MonoBehaviour
                     Debug.Log(key);
                     currentAction = null;
                     actionText.text = "";
-                    UpdateButtonLabels(); // Обновляем текст на кнопках
+                    UpdateButtonLabels(); 
                     break;
                 }
             }

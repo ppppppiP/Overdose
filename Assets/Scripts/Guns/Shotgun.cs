@@ -1,5 +1,7 @@
 ﻿using System.Collections;
+using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.Rendering;
 
 public class Shotgun : MonoBehaviour
 {
@@ -10,7 +12,7 @@ public class Shotgun : MonoBehaviour
     public float range = 100f; // Дальность стрельбы
     public float fireRate = 1f; // Задержка между выстрелами
     public int magazineSize = 5; // Количество патронов в магазине
-    public int totalAmmo = 20; // Общее количество патронов
+    [SerializeField] ShootGunBullets bullets; // Общее количество патронов
     public float reloadTime = 2f; // Время перезарядки
 
     [Header("References")]
@@ -32,6 +34,7 @@ public class Shotgun : MonoBehaviour
     [SerializeField] Animator anim;
     [SerializeField] WeaponRecoil recoil;
 
+
     KeyCode _shootKey;
     void Start()
     {
@@ -44,7 +47,7 @@ public class Shotgun : MonoBehaviour
         if (isReloading)
             return;
 
-        if (currentAmmo <= 0 && totalAmmo > 0)
+        if (currentAmmo <= 0 && bullets.Count > 0)
         {
             StartCoroutine(Reload());
             return;
@@ -68,15 +71,15 @@ public class Shotgun : MonoBehaviour
         yield return new WaitForSeconds(reloadTime);
 
         int ammoToReload = magazineSize - currentAmmo;
-        if (totalAmmo >= ammoToReload)
+        if (bullets.Count >= ammoToReload)
         {
             currentAmmo += ammoToReload;
-            totalAmmo -= ammoToReload;
+            bullets.RemoveItem(ammoToReload);
         }
         else
         {
-            currentAmmo += totalAmmo;
-            totalAmmo = 0;
+            currentAmmo += bullets.Count;
+            bullets.RemoveItem(bullets.Count);
         }
 
         isReloading = false;
@@ -155,4 +158,11 @@ public class Shotgun : MonoBehaviour
 public interface IFirable
 {
     public void Interact(RaycastHit hit);
+}
+
+
+public interface IPlayerArsenal
+{
+
+    
 }

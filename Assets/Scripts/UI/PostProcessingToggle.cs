@@ -21,7 +21,7 @@ public class PostProcessingToggle : MonoBehaviour
 
     void Awake()
     {
-        // Инициализация эффектов постобработки
+      
         if (volumeProfile != null)
         {
             volumeProfile.TryGet(out bloom);
@@ -31,7 +31,7 @@ public class PostProcessingToggle : MonoBehaviour
             volumeProfile.TryGet(out liftGammaGain);
         }
 
-        // Загрузка сохраненных значений и установка начальных состояний Toggle
+        
         if (bloomToggle != null)
         {
             bloomToggle.isOn = PlayerPrefs.GetInt("BlurToggle", bloom != null && bloom.active ? 1 : 0) == 1;
@@ -57,8 +57,8 @@ public class PostProcessingToggle : MonoBehaviour
         }
         if (gammaSlider != null)
         {
-            gammaSlider.minValue = -0.5f; // Минимальное значение для гаммы
-            gammaSlider.maxValue = 1f; // Максимальное значение для гаммы
+            gammaSlider.minValue = -0.5f; 
+            gammaSlider.maxValue = 1f; 
             gammaSlider.value = PlayerPrefs.GetFloat("GammaValue", liftGammaGain != null ? liftGammaGain.gamma.value.x : 1f);
             gammaSlider.onValueChanged.AddListener(OnGammaSliderChanged);
         }

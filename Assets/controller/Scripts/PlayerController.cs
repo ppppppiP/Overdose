@@ -49,11 +49,11 @@ namespace Controller
         private bool isJumping = true;
         private float installCrouchHeight;
         private float rotationX = 0;
-        private bool isRunning = false;
+        public bool isRunning = false;
         private Vector3 installCameraMovement;
         private float installFOV;
         private Camera cam;
-        private bool moving;
+        public bool moving;
         public float vertical;
         public float horizontal;
         public float lookVertical;
@@ -141,21 +141,7 @@ namespace Controller
                 moving = moveForward || moveLeft || moveRight;
             }
             // Управление взглядом и камерой
-            if (Cursor.lockState == CursorLockMode.Locked)
-            {
-                lookVertical = -Input.GetAxis("Mouse Y");
-                lookHorizontal = Input.GetAxis("Mouse X");
-
-                rotationX += lookVertical * lookSpeed;
-                rotationX = Mathf.Clamp(rotationX, -lookXLimit, lookXLimit);
-                Camera.transform.localRotation = Quaternion.Euler(rotationX, 0, 0);
-                transform.rotation *= Quaternion.Euler(0, lookHorizontal * lookSpeed, 0);
-
-                if (isRunning && moving)
-                    cam.fieldOfView = Mathf.Lerp(cam.fieldOfView, runningFOV, speedToFOV * Time.deltaTime);
-                else
-                    cam.fieldOfView = Mathf.Lerp(cam.fieldOfView, installFOV, speedToFOV * Time.deltaTime);
-            }
+            
 
             // Управление приседанием
             if (Input.GetKey(crouchKey))

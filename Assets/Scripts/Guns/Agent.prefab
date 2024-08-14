@@ -17,6 +17,7 @@ GameObject:
   - component: {fileID: 4164550497001263751}
   - component: {fileID: 3532912012132039231}
   - component: {fileID: 3396383456068591520}
+  - component: {fileID: 848871580696030331}
   m_Layer: 0
   m_Name: Agent
   m_TagString: Untagged
@@ -158,6 +159,7 @@ MonoBehaviour:
   arcAngle: 15.2
   _anim: {fileID: 1392421893531031692}
   patrolRadius: 72.72
+  CanMove: 0
 --- !u!136 &4164550497001263751
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -210,6 +212,33 @@ MonoBehaviour:
   - {fileID: 6453817917449606230}
   anim: {fileID: 1392421893531031692}
   _hp: {fileID: 0}
+--- !u!54 &848871580696030331
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 674667639901803546}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &3011798804731618824
 GameObject:
   m_ObjectHideFlags: 0
