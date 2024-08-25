@@ -63,7 +63,7 @@ public class PostProcessingToggle : MonoBehaviour
             gammaSlider.onValueChanged.AddListener(OnGammaSliderChanged);
         }
 
-        // Применяем сохраненные значения
+       
         OnBlurToggleChanged(bloomToggle.isOn);
         OnFogToggleChanged(fogToggle.isOn);
         OnSSRToggleChanged(ssrToggle.isOn);
@@ -122,7 +122,7 @@ public class PostProcessingToggle : MonoBehaviour
 
     void OnDestroy()
     {
-        // Отписываемся от событий Toggle и Slider при уничтожении объекта
+        
         if (bloomToggle != null)
         {
             bloomToggle.onValueChanged.RemoveListener(OnBlurToggleChanged);
