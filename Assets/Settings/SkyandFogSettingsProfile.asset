@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e17fad69ea181b4483974138b566975, type: 3}
   m_Name: ScreenSpaceRefraction
   m_EditorClassIdentifier: 
-  active: 1
+  active: 0
   screenFadeDistance:
     m_OverrideState: 1
     m_Value: 0.001
@@ -1209,7 +1209,7 @@ MonoBehaviour:
   active: 1
   intensity:
     m_OverrideState: 1
-    m_Value: 0.461
+    m_Value: 0.363
   xMultiplier:
     m_OverrideState: 1
     m_Value: 1
@@ -1221,7 +1221,7 @@ MonoBehaviour:
     m_Value: {x: 0.5, y: 0.5}
   scale:
     m_OverrideState: 1
-    m_Value: 1.11
+    m_Value: 1.111
 --- !u!114 &2790249460794844972
 MonoBehaviour:
   m_ObjectHideFlags: 3
