@@ -3,8 +3,8 @@
 public class Scope: MonoBehaviour
 {
     [SerializeField] Animator anim;
-    [SerializeField] GameObject hands;
-    [SerializeField] GameObject target;
+    //[SerializeField] GameObject hands;
+    //[SerializeField] GameObject target;
 
     bool _switch;
 
@@ -17,7 +17,6 @@ public class Scope: MonoBehaviour
             { 
                 _switch = true;
                 anim.CrossFade("Scope", 0.2f);
-                hands.transform.position = target.transform.position;
             }
             
         }
