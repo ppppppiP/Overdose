@@ -10,11 +10,11 @@ namespace Controller
         [Header("PlayerController")]
         [SerializeField] private Transform Camera;
         [SerializeField] private ItemChange Items;
-        [SerializeField, Range(1, 10)] private float walkingSpeed = 3.0f;
+        [SerializeField, Range(1, 10)] private float walkingSpeed = 1.5f;
         [SerializeField, Range(1, 10)] private float LadderSpeed = 3.0f;
         [SerializeField, Range(2, 20)] private float runningSpeed = 4.0f;
         [Range(0.1f, 5)] public float crouchSpeed = 1.0f;
-        [SerializeField, Range(0, 20)] private float jumpSpeed = 6.0f;
+        [SerializeField, Range(0, 20)] private float jumpSpeed = 4.0f;
         [SerializeField, Range(0.5f, 10)] private float lookSpeed = 2.0f;
         [SerializeField, Range(10, 120)] private float lookXLimit = 80.0f;
         [Space(20)]

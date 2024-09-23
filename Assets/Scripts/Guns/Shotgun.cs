@@ -12,7 +12,7 @@ public class Shotgun : MonoBehaviour
     public float range = 100f; // Дальность стрельбы
     public float fireRate = 1f; // Задержка между выстрелами
     public int magazineSize = 5; // Количество патронов в магазине
-    [SerializeField] ShootGunBullets bullets; // Общее количество патронов
+    public int bullets; // Общее количество патронов
     public float reloadTime = 2f; // Время перезарядки
 
     [Header("References")]
@@ -47,13 +47,13 @@ public class Shotgun : MonoBehaviour
         if (isReloading)
             return;
 
-        if (currentAmmo <= 0 && bullets.Count > 0)
+        if (currentAmmo <= 0 && bullets > 0)
         {
             StartCoroutine(Reload());
             return;
         }
 
-        if (Input.GetKeyDown(_shootKey) && Time.time >= nextTimeToFire && currentAmmo > 0)
+        if (Input.GetKeyDown(KeyCode.Mouse0) && Time.time >= nextTimeToFire && currentAmmo > 0)
         {
             nextTimeToFire = Time.time + 1f / fireRate;
             Shoot();
@@ -71,15 +71,15 @@ public class Shotgun : MonoBehaviour
         yield return new WaitForSeconds(reloadTime);
 
         int ammoToReload = magazineSize - currentAmmo;
-        if (bullets.Count >= ammoToReload)
+        if (bullets >= ammoToReload)
         {
             currentAmmo += ammoToReload;
-            bullets.RemoveItem(ammoToReload);
+            //bullets.RemoveItem(ammoToReload);
         }
         else
         {
-            currentAmmo += bullets.Count;
-            bullets.RemoveItem(bullets.Count);
+            currentAmmo += bullets;
+            //bullets.RemoveItem(bullets.Count);
         }
 
         isReloading = false;
